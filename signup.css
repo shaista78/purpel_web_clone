@@ -2,13 +2,13 @@
     border-radius: 1px solid red;
     /* text-align: center; */
     background-color: white;
-    width: 40%;
+    width: 400px;
     margin: auto;
     padding: 30px;
     box-shadow: 0px 3px #a2b9c5;
 }
 #nu{
-    width: 50%;
+    width: 80%;
     margin-left: 0px;
   
 }
@@ -26,10 +26,26 @@ body{
 
 
 }
-#last div{
+/* #last div{
     border: 1px solid gray;
     margin: auto;
     padding: 10px 30px;
+} */
+img{
+    width: 20%;
+}
+#facebook{
+    border: 1px solid gray;
+    margin: auto;
+    padding: 10px 30px;
+   
+}
+#google{
+    border: 1px solid gray;
+    margin: auto;
+    padding: 10px 30px;
+   
+   
 }
 /* {
   
