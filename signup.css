@@ -1,0 +1,39 @@
+.popup{
+    border-radius: 1px solid red;
+    /* text-align: center; */
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 3px #a2b9c5;
+}
+#nu{
+    width: 50%;
+    margin-left: 0px;
+  
+}
+body{
+    background-color: #EFEBE9;
+}
+#connect{
+    text-align: center;
+    color: #78909C;
+}
+#last{
+    display: flex;
+    /* margin: auto; */
+   
+
+
+}
+#last div{
+    border: 1px solid gray;
+    margin: auto;
+    padding: 10px 30px;
+}
+/* {
+  
+}
+#google{
+    margin: auto;
+}#facbook */
