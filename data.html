@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      #data {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-gap: 5%;
+            align-items: center;
+        }
+        
+         #data div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div onclick="viewPerfumes()" id="data"></div>
 </body>
 </html>
 <script>
@@ -36,7 +50,7 @@ const perfumes=[
     price: 599,
 },{
     image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/241801/la-french-naughty-girl-perfume-for-women-85-ml_2_display_1622715967_f7155204.jpg",
-    name:"",
+    name:"Dovidoff cool red EDT",
     rating:4.4 ,
     price: 499,
 },{
@@ -60,7 +74,7 @@ const perfumes=[
     rating: 4.1,
     price: 1299,
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112197/armaf-vanity-femme-elegence-eau-de-parfum-for-women-100-ml_1_display_1484636206_6e0a9a14.jpg",
+image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112197/armaf-vanity-femme-elegence-eau-de-parfum-for-women-100-ml_1_display_1484636206_6e0a9a14.jpg",
     name:"Armaf Vanity Femme Elegence Eau de Parfum For Women(100 ml)",
     rating: 3.8,
     price: 1199,
@@ -73,9 +87,47 @@ const perfumes=[
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/242385/insight-cosmetics-cherry-eau-de-perfume_1_display_1623212105_88acf05a.jpg",
     name:"INSIGHT Cosmetics Cherry Eau De Perfume",
     rating: 3.5,
+
     price: 190,
 }
 ];
+    const perfumes_json = JSON.stringify(perfumes);
+
+    localStorage.setItem("women_perfume", perfumes_json);
+
+    let women_perfume = localStorage.getItem("women_perfume");
+
+    women_perfume = JSON.parse(women_perfume);
+
+    function viewPerfumes() {
+        console.log(women_perfume);
+        let data = document.getElementById("data");
+
+        women_perfume.forEach(function (product) {
+            let div = document.createElement("div");
+            let name = document.createElement("p");
+            name.innerText = product.name;
+            
+            let price = document.createElement("p");
+            price.innerText = product.price;
+            let image = document.createElement("img");
+            image.src = product.image;
+            let rating = document.createElement("p");
+            rating.innerText = product.rating;
+
+
+            let btn = document.createElement("button");
+            btn.innerText = "Add to card"
+
+            btn.onclick = function () {
+                addtoCard(product);
+            }
+            div.append(image, name, price, rating, btn);
+            data.append(div);
+        });
+    }
+
+viewPerfumes();
 const deodorants_roll=[
 {
     name:"NIVEA Deodorant Roll On Whitening Smooth Skin 50ml",
