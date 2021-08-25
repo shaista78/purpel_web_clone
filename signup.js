@@ -12,16 +12,30 @@ function tes (){
      botn.style.background = 'red';
 alert("yes")
  }
+ var user = [];
+ var cred = [];
+//  var localstorageitem = localStorage.getItem("jwel");
+ if(localStorage.getItem("cred")==null){
 
+    localStorage.setItem("user",JSON.stringify([]));
+    localStorage.setItem("cred",JSON.stringify([]));
+}
  function store (){
 
-     var inputmob = document.getElementById("nu");
-     var inputpass = document.getElementById("pas");
-     localStorage.setItem("username", JSON.stringify(inputmob.value));
-     localStorage.setItem("password",JSON.stringify(inputpass.value));
+     var inputmob = document.getElementById("nu").value;
+     var inputpass = document.getElementById("pas").value;
+    //  localStorage.setItem("username", JSON.stringify(inputmob.value));
+    //  localStorage.setItem("password",JSON.stringify(inputpass.value));
+    // var objcred = {
+    //     password: inputpass
+    // }
+    // var objuser = {
+    //     name: inputmob,
+    // }
+    user.push(inputmob);
+    cred.push(inputpass);
+    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("cred", JSON.stringify(cred));
 
  }
- if(localStorage.getItem("username && password")==null){
-    localStorage.setItem("username",JSON.stringify([]));
-    localStorage.setItem("password",JSON.stringify([]));
-}
+ 
