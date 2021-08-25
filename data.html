@@ -96,7 +96,37 @@ image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/1
     localStorage.setItem("women_perfume", perfumes_json);
 
     let women_perfume = localStorage.getItem("women_perfume");
+women_perfume = JSON.parse(women_perfume);
 
+    function viewPerfumes() {
+        console.log(women_perfume);
+        let data = document.getElementById("data");
+
+        women_perfume.forEach(function (product) {
+            let div = document.createElement("div");
+            let name = document.createElement("p");
+            name.innerText = product.name;
+            
+            let price = document.createElement("p");
+            price.innerText = product.price;
+            let image = document.createElement("img");
+            image.src = product.image;
+            let rating = document.createElement("p");
+            rating.innerText = product.rating;
+
+
+            let btn = document.createElement("button");
+            btn.innerText = "Add to card"
+
+            btn.onclick = function () {
+                addtoCard(product);
+            }
+            div.append(image, name, price, rating, btn);
+            data.append(div);
+        });
+    }
+
+viewPerfumes();
     
 const deodorants_roll=[
 {
