@@ -1,0 +1,16 @@
+#Address{
+    border: 1px solid red;
+    width: 50%;
+    
+    
+   }
+   #T_bar{
+       /* max-width: 600px;
+       max-height: 50px; */
+       color:#212121;
+       font-family: system-ui;
+
+   }
+   h2{
+       background-color:#E0E0E0; 
+   }
