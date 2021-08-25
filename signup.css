@@ -3,7 +3,7 @@
     /* text-align: center; */
     background-color: white;
     width: 400px;
-    height: 280px;
+    height: 400px;
     margin: auto;
     padding: 50px;
     box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
@@ -18,15 +18,22 @@
   background-color: #E3F2FD;
   height: 30px;
 }
-#nu + p{
-    margin-top: 50px;
+#pas{
+    width: 70%;
+    margin-left: 0px;
+  background-color: #E3F2FD;
+  height: 30px;   
 }
+/* #nu + p{
+    margin-top: 50px;
+} */
 body{
     background-color: #EFEBE9;
 }
 #connect{
     text-align: center;
     color: #78909C;
+    margin-top: 50px;
 }
 #face{
     display: flex;
@@ -69,3 +76,6 @@ img{
     margin: auto;
     margin-left: 0px
 }
+/* #connect:hover{
+   color: blue;
+} */
