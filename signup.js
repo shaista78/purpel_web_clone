@@ -1,4 +1,4 @@
-var holder = document.getElementById("connect");
+// var holder = document.getElementById("connect");
 
 
 function tes (){
@@ -6,36 +6,50 @@ function tes (){
     holder.style.color = 'red';
    
 }
-// holder.addEventListener('mous', tes);
- function hol (){
-    var botn = document.getElementById("btn");
-     botn.style.background = 'red';
-alert("yes")
- }
+
+//  function hol (){
+//     var botn = document.getElementById("btn");
+//      botn.style.background = 'red';
+// alert("yes")
+//  }
  var user = [];
- var cred = [];
-//  var localstorageitem = localStorage.getItem("jwel");
- if(localStorage.getItem("cred")==null){
+ 
+
+ if(localStorage.getItem("user")==null){
 
     localStorage.setItem("user",JSON.stringify([]));
-    localStorage.setItem("cred",JSON.stringify([]));
+}
+var againget = localStorage.getItem("user");
+if(againget !== null){
+    user= JSON.parse(againget);
 }
  function store (){
 
      var inputmob = document.getElementById("nu").value;
      var inputpass = document.getElementById("pas").value;
-    //  localStorage.setItem("username", JSON.stringify(inputmob.value));
-    //  localStorage.setItem("password",JSON.stringify(inputpass.value));
-    // var objcred = {
-    //     password: inputpass
-    // }
-    // var objuser = {
-    //     name: inputmob,
-    // }
-    user.push(inputmob);
-    cred.push(inputpass);
+     if(inputmob.length == 0 || inputmob.length < 10 || inputmob.length > 10){
+         alert("Please enter 10 digit vailid Number")
+         return;
+     }
+    else if(inputpass.length < 8){
+        alert("Please enter min. 8 char")
+        return; 
+    }
+
+     if(localStorage.getItem("user") > 0){
+    var namedata = localStorage.getItem()
+     }
+
+ 
+    var objuser = {
+
+        name: inputmob,
+        password: inputpass,
+    }
+    user.push(objuser);
+  
     localStorage.setItem("user", JSON.stringify(user));
-    localStorage.setItem("cred", JSON.stringify(cred));
+
 
  }
  
