@@ -24,6 +24,7 @@
    #Add_form > div > input{
        border: 0px solid white;
        margin-bottom: 10px;
+       outline: none;
    }
    #cit_stat{
        display:flex;
@@ -61,15 +62,18 @@
        border: 0px solid white;
    }
    #Jeet > input{
-       border: 1px solid white
+       border: 1px solid white;
+       outline: none;
     
    }
    #cit_stat > div > input{
        border: 0px solid white;
        margin-bottom: 10px;
+       outline: none;
    }
   #Jeet  > input{
       margin-bottom: 10px;
+      outline: none;
   }
   select{
       border: none;
