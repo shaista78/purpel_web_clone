@@ -21,6 +21,31 @@
         #btn{
             display: block;
         }
+        
+              .txt {
+            height: 42px;
+            color: #566770;
+            font-size: 16px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+            line-height: 21px;
+        }
+
+        .prz {
+            font-size: 17px;
+            line-height: 0px;
+
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .myDIV:hover .hide {
+            display: block;
+            color: rgb(241, 234, 234);
+        }
     </style>
 </head>
 <body>
@@ -35,62 +60,62 @@ const colognes=[
     name:"Biotique Fresh Neroli Eau De Cologne",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/107124/biotique-bio-fresh-neroli-50-ml_2_display_1583929361_2f141be0.jpg",
     rating:3.8 ,
-    price: 559,
+    price: "₹559",
 },{
     name:"Jovan Sex Appeal Eau De Cologne Perfume",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112126/joven-sex-appeal-eau-de-cologne-perfume-spray-for-men-88-ml_1_display_1484206394_9fa6e14d.jpg",
     rating:4.7 ,
-    price: 649,
+    price: "₹649",
 },{
     name:"Ustraa by happly unmarried Cologne Spray",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/126721/ustraa-by-happily-unmarried-cologne-spray-base-camp-deodorant-spray-for-men-100-ml_9_display_1611567573_bff904f0.jpg",
     rating: 5,
-    price: 599,
+    price: "₹599",
 },{
     name:"Jovan Musk Pour Homme Cologe Spray For Men",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/89670/jovan-musk-for-men-cologne-spray-88-ml_1_display_1479458032_171e2f47.jpg",
     rating:5 ,
-    price: 699,
+    price: "₹699",
 },{
     name:"Jovan Combo Of Black Musk Men's Perfume",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/148454/jovan-combo-of-black-musk-men-s-perfumes-edc-88-ml-with-deodorant-150-ml_1_display_1531915507_a655923d.jpg",
     rating:4.6 ,
-    price: 829,
+    price: "₹829",
 },{
     name:"4711 Ekw Eau de Cologne 400ml",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/238593/4711-ekw-eau-de-cologne-400ml_2_display_1626096555_26f34a5b.jpg",
     rating:4.6 ,
-    price: 3315,
+    price: "₹3315",
 },{
     name:"Ustraa by happly unmarried Cologne Spray",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/126721/ustraa-by-happily-unmarried-cologne-spray-base-camp-deodorant-spray-for-men-100-ml_9_display_1611567573_bff904f0.jpg",
     rating: 5,
-    price: 599,
+    price: "₹599",
 },{
     name:"Jovan White Musk For men Cologe Spray",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112128/jovan-white-musk-for-women-cologne-spray-96-ml_1_display_1484206412_2c02a18d.jpg",
     rating: 4.3,
-    price: 699,
+    price: "₹699",
 },{
     name:"Jovan Musk Pour Homme Cologe Spray For Men",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/89670/jovan-musk-for-men-cologne-spray-88-ml_1_display_1479458032_171e2f47.jpg",
     rating:5 ,
-    price: 699,
+    price: "₹699",
 },{
     name:"Jovan Black Musk For Men Cologne Spray",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/150989/jovan-black-musk-for-men-cologne-spray-88-ml_1_display_1484206430_c031da6d.jpg",
     rating:5.0 ,
-    price: 599,
+    price: "₹599",
 },{
     name:"4711 Ekw Eau de Cologne 400ml",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/238593/4711-ekw-eau-de-cologne-400ml_2_display_1626096555_26f34a5b.jpg",
     rating:4.6 ,
-    price: 3315,
+    price: "₹3315",
 },{
      name:"Jovan Black Musk For Men Cologne Spray",
     image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/150989/jovan-black-musk-for-men-cologne-spray-88-ml_1_display_1484206430_c031da6d.jpg",
     rating:5.0 ,
-    price: 599,
+    price: "₹599",
 },
 ];
     const perfumes_json = JSON.stringify(colognes);
@@ -104,30 +129,43 @@ women_perfume = JSON.parse(women_perfume);
         console.log(women_perfume);
         let data = document.getElementById("data");
 
-        women_perfume.forEach(function (product) {
-            let div = document.createElement("div");
+ women_perfume.forEach(function (product) {
+           let div = document.createElement("div");
+           div.setAttribute("class", "myDIV")
             let name = document.createElement("p");
             name.innerText = product.name;
-            
+            name.setAttribute("class", "txt")
+
             let price = document.createElement("p");
             price.innerText = product.price;
             let image = document.createElement("img");
+            price.setAttribute("class", "prz")
             image.src = product.image;
+
+            
             let rating = document.createElement("p");
             rating.innerText = product.rating;
+            rating.style.color = "red"
+            rating.style.float = "right"
+            rating.style.backgroundColor = "green"
 
 
             let btn = document.createElement("button");
             btn.innerText = "Add to card"
-           // btn.setAttribute("id","btn")
+            btn.style.width = "100%"
+            btn.style.height = "40px"
+            btn.style.backgroundColor = "#004d40"
+            btn.style.fontSize = "25px"
+            btn.setAttribute("class", "hide")
             btn.onclick = function () {
                 addtoCard(product);
             }
-            div.append(image, name, btn,price, rating);
+            name.append(price)
+            price.append(rating)
+            div.append(image, btn, name);
             data.append(div);
         });
     }
-
 viewPerfumes();
     if (localStorage.getItem("card") === null) {
         localStorage.setItem("card", JSON.stringify([]));
