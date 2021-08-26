@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+        #data {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+           grid-gap: 4%;
+           
+        }
+  #data div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+   
+
+    
+
+    <div id="data"></div>
+
+</body>
+
+</html>
+<script>
+
+    let card_data = JSON.parse(localStorage.getItem("card"));
+    console.log("card_data:", card_data);
+
+    let data_div = document.getElementById("data");
+    card_data.forEach(function (product) {
+       
+        let div = document.createElement("div");
+
+        let p_name = document.createElement("p");
+
+        p_name.innerText = product.name;
+    
+
+        let p_price = document.createElement("p");
+
+        p_price.innerText = product.price;
+
+        let image = document.createElement("img");
+
+        image.src = product.image;
+
+
+        div.append(image, p_name, p_price);
+
+        data_div.append(div);
+    });
+
+   
+ 
+   
+</script>
