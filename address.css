@@ -1,5 +1,5 @@
 #Address{
-    border: 1px solid red;
+    border: 2px solid #E0E0E0 ;
     width: 50%;
     
     
@@ -13,4 +13,17 @@
    }
    h2{
        background-color:#E0E0E0; 
+   }
+   #Add_form > div{
+     margin-top: 50px;
+        
+   }
+   #exam{
+    box-sizing: border-box;
+   }
+   #cit_stat{
+       display:flex;
+   }
+   #stat{
+       margin-left: 10px;
    }
