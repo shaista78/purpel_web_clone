@@ -19,15 +19,24 @@
             flex-direction: column;
             align-items: center;
         }
-      
+            .txt {
+            height: 42px;
+            color: #566770;
+            font-size: 16px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+            line-height: 21px;
+        }
+
     </style>
 </head>
 
 <body>
    
 
-    
-
+    <p id="total"></p>
+<p id="totalitem"></p>
     <div id="data"></div>
 
 </body>
@@ -39,6 +48,8 @@
     console.log("card_data:", card_data);
 
     let data_div = document.getElementById("data");
+     var total = 0;
+    var totalitem =0;
     card_data.forEach(function (product) {
        
         let div = document.createElement("div");
@@ -46,6 +57,7 @@
         let p_name = document.createElement("p");
 
         p_name.innerText = product.name;
+        p_name.setAttribute("class","txt")
     
 
         let p_price = document.createElement("p");
@@ -56,11 +68,22 @@
 
         image.src = product.image;
 
-
-        div.append(image, p_name, p_price);
+        p_name.append(p_price);
+        
+        div.append(image, p_name);
 
         data_div.append(div);
+         total = total + Number(product.price);
+         console.log(total);
+         totalitem = totalitem+Number(1);
     });
+    var total_h1 = document.getElementById("total");
+
+    total_h1.innerText = `Total Price- ${total}`
+
+    var totalitems = document.getElementById("totalitem");
+
+    totalitems.innerText = `Total Items- ${(totalitem)}`
 
    
  
