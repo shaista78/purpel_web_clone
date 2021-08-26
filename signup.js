@@ -1,10 +1,6 @@
 var user = [];
 
 
-<<<<<<< HEAD
-if (localStorage.getItem("user") == null) {
-
-=======
 // function tes (){
 //     var holder = document.getElementById("nu");
 //     holder.style. = '#FFAB91';
@@ -26,7 +22,6 @@ var user = [];
 
 if (localStorage.getItem("user") == null) {
 
->>>>>>> 2cea9d83acb3d488e618801e84c7ab29ccf43094
     localStorage.setItem("user", JSON.stringify([]));
 }
 var againget = localStorage.getItem("user");
@@ -34,7 +29,7 @@ if (againget !== null) {
     user = JSON.parse(againget);
 }
 function store() {
-
+    console.log(check());
     var inputmob = document.getElementById("nu").value;
     var inputpass = document.getElementById("pas").value;
     if (inputmob.length == 0 || inputmob.length < 10 || inputmob.length > 10) {
@@ -63,27 +58,37 @@ function store() {
     user.push(objuser);
     var out = objuser.name;
     localStorage.setItem("user", JSON.stringify(user));
-    check(out);
+   
 
 }
 
-function check(out) {
+function check() {
+    var inputpass = document.getElementById("pas").value;
+    var inputmob = document.getElementById("nu").value;
     var againget = localStorage.getItem("user");
     console.log(user);
     if (againget !== null) {
-        user = JSON.parse(againget);
+        var use = JSON.parse(againget);
     }
-    if (user.some(function (el) {
-        if ((el.name === out)) {
-            alert("congrats")
-        }
-    }));
-<<<<<<< HEAD
+    var chk= document.getElementById("check");
+   for(var i = 0; i < use.length; i++){
+       if(use[i].name === inputmob){
+           
+           var masg = "you are logged in";
+           chk.innerText="log"
+           return;
+
+       }
+   
+   if(inputmob.length >  9 && inputpass.length > 7 )
+    
+    var msg2 ="u singed in success";
+  
+    return chk.innerText= "ok";
+   
+   }
 }
-=======
-}
 
 
 
 
->>>>>>> 2cea9d83acb3d488e618801e84c7ab29ccf43094
