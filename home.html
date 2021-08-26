@@ -30,10 +30,10 @@
 			<div>
                <div>
                	<div id="search1">
-				<a href="#">What are you looking for?</a>
-				<a id="search"><i class="fas fa-search fa-lg"></i></a>
+				<a href="#" id="myBtn">What are you looking for?</a>
+				<a id="search myBtn"><i id="myBtn" class="fas fa-search fa-lg"></i></a>
 			    </div>
-				<a href="#"><hr id="search-line"/></a>
+				<a href="#" id="myBtn"><hr id="search-line"/></a>
 			</div>
 		</div>
 
@@ -69,9 +69,9 @@
 
 
 
-		<div id="images-box">
+		<div id="images-box" class="images-box">
 			
-			<img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1629219052_makeup.jpg"/>
+			<img id="first"src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1629219052_makeup.jpg"/>
 			<img src ="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1629219050_skin-care.jpg"/>
 
 			<img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1629219053_hair-care.jpg"/>
@@ -102,6 +102,35 @@
 
 
 
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+<div id="register">
+	<p>Search for product or Brand</p>
+
+	<div class="align-top">
+	
+
+	<input type="text"/>
+	<a id="search"><i class="fas fa-search fa-lg"></i></a>
+</div>
+
+
+  </div>
+  </div>
+
+</div> 		
+
+
+
 		
 
 
@@ -112,6 +141,37 @@
 		document.getElementById("popup-1").classList.toggle("active");
 		
 	}
+
+
+
+
+
+
+
+
+
+
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onmouseout = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
 
 
 
