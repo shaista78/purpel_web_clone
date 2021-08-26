@@ -17,12 +17,17 @@
     margin-left: 0px;
   background-color: #E3F2FD;
   height: 30px;
+  border: 0px solid white;
+  border-bottom: 2px solid plum;
+  
 }
 #pas{
     width: 70%;
     margin-left: 0px;
   background-color: #E3F2FD;
-  height: 30px;   
+  height: 30px;
+  border: 0px solid white;
+  border-bottom: 2px solid plum;  
 }
 /* #nu + p{
     margin-top: 50px;
@@ -95,3 +100,14 @@ margin: auto;
 /* #connect:hover{
    color: blue;
 } */
+#btn{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    /* width: 50px; */
+    padding: auto;
+    box-shadow: 1px 1px 15px 5px  #e2e6e9;
+    border: 1px solid white;
+   margin-left: 40%;
+   border-radius: 3px;
+}

@@ -12,11 +12,7 @@ var user = [];
 
 // }
 
-//  function hol (){
-//     var botn = document.getElementById("btn");
-//      botn.style.background = 'red';
-// alert("yes")
-//  }
+ 
 var user = [];
 
 
@@ -28,6 +24,7 @@ var againget = localStorage.getItem("user");
 if (againget !== null) {
     user = JSON.parse(againget);
 }
+
 function store() {
     check();
     var inputmob = document.getElementById("nu").value;
@@ -37,15 +34,23 @@ function store() {
         var msg = document.getElementById("mess");
         
         msg.innerText = "Please enter vailid Number";
-        return;
+        
+        return ;
+      
     }
+   
     else if (inputpass.length < 8) {
         var msg = document.getElementById("mess1");
         msg.innerText = "Please enter min. 8 char";
-
+        var msg1 = document.getElementById("mess");
+        msg1.innerText = "";
         return;
+     
     }
-
+    var msg1 = document.getElementById("mess");
+    var msg2 = document.getElementById("mess1");
+    msg1.innerText = "";
+    msg2.innerText = "";
     if (localStorage.getItem("user") > 0) {
         var namedata = localStorage.getItem()
     }
@@ -56,12 +61,14 @@ function store() {
         name: inputmob,
         password: inputpass,
     }
+    
     user.push(objuser);
     var out = objuser.name;
     localStorage.setItem("user", JSON.stringify(user));
    document.getElementById("nu").value = "";
    document.getElementById("pas").value = "";
-    // document.getElementById("mess").value = "";
+   
+   
 }
 
 function check() {
@@ -92,9 +99,25 @@ function check() {
     return chk.innerText= "signup";}
    
    }
-   
+//    msg.value = "";
 }
 
+// document.getElementById("mess").value= "";
 
+// document.getElementById("mess1").value = "";
 
+function hol (){
+    var botn = document.getElementById("btn");
+     botn.style.background = 'red';
+     botn.style.color = 'white';
 
+ }
+function fun(){
+    var bt = document.getElementById("btn");
+    bt.style.background = 'white';
+   bt.style.color = 'red';
+}
+// function bottom(){
+//     var btm = document.getElementById("nu");
+//     btm.style.border-bottom: 'red';
+// }
