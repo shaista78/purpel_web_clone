@@ -43,7 +43,11 @@
         .myDIV:hover .hide {
             display: block;
             color: rgb(241, 234, 234);
+            cursor: -webkit-grab;
+             cursor: grab;
+
         }
+        
     </style>
 </head>
 <body>
@@ -63,12 +67,12 @@ const perfumes=[
     image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/99032/engage-w1-perfume-spray-for-women-120-ml_5_display_1624275787_a68bf411.jpg",
     name:"Engage W1 Perfume Spray For Women, 120 ml",
     rating: 4.0,
-    price:"₹ 179" ,
+    price:"₹179" ,
 },{
     image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/99047/rasasi-blue-lady-edp-for-women-40-ml_2_display_1472910452_ba03ed23.jpg",
     name:"Rasasi Blue Lady EDP For Women(40 ml)",
     rating: 4.0,
-    price:"₹ 1099",
+    price:"₹1099",
 },{
     image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/241406/body-cupid-floral-garden-eau-de-parfum-floral-collection-for-women-100-ml_1_display_1609996006_1f5719e7.jpg",
     name:"Body Cupid Floral Garden Eau de Parfum-Floral Collection-for Women -(100 ml)",
@@ -154,6 +158,7 @@ women_perfume = JSON.parse(women_perfume);
             btn.style.height = "40px"
             btn.style.backgroundColor = "#004d40"
             btn.style.fontSize = "25px"
+            btn.style.cursor="grab"
             btn.setAttribute("class", "hide")
             btn.onclick = function () {
                 addtoCard(product);
