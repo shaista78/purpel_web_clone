@@ -12,21 +12,43 @@
         <div id="Address">
             <div id="T_bar">
                 <h2>Add New Address</h2>
-                <h2>Mr</h2>
-                <p>Name*</p>
-                <input type="text"/>
-                <p>Pincode*</p>
+                <select>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+            </select>
+            <form id="Add_form">
+                <div>
+                    <label>Name*</label>
+                    <input id="exam" type="text"/>     
+            </div>
+            <div>
+                <label>Pincode*</label>
                 <input type="number"/>
-                <p>Address*</p>
+            </div>
+            <div>
+                <label>Address*</label>
                 <input type="text">
-                <p>Landmark</p>
+            </div>
+            <div>
+                <label>Landmark</label>
                 <input type="text">
-                <p>City</p>
+            </div>
+            <div id="cit_stat">
+            <div>
+                <label>city</label>
                 <input type="text">
-                <p>State</p>
+            </div>
+            <div>
+                <label id="stat">State</label>
                 <input type="text">
-                <p>Mobile*</p>
+            </div>
+        </div>
+            <div>
+                <label>Mobile*</label>
                 <input type="number">
+            </div>
+            </form>
             </div>
         </div>
 
