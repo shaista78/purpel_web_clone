@@ -34,3 +34,12 @@
    select{
        margin-left: 20px;
    }
+   #continue{
+       max-height: 80px;
+       max-width: 200px;
+       color: white;
+       background-color:#F50057;
+       border-radius: 4px;
+       text-align: center;
+       margin-left: 30%;
+   }
