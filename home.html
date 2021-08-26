@@ -31,7 +31,7 @@
                <div>
                	<div id="search1">
 				<a href="#" id="myBtn">What are you looking for?</a>
-				<a id="search myBtn"><i id="myBtn" class="fas fa-search fa-lg"></i></a>
+				<a id="search"><i id="myBtn" class="fas fa-search fa-lg"></i></a>
 			    </div>
 				<a href="#" id="myBtn"><hr id="search-line"/></a>
 			</div>
@@ -52,11 +52,12 @@
 		<hr id="line"/>
 		<div id="categories">
 
-          
-			<p id="head"><i class="fas fa-bars"></i>SHOP CATEGORIES</p>
-			<p id="head">BRANDS</p>
-			<p id="head">NEW</p>
-			<p id="head">OFFERS</p>
+      
+			<p id="mybt"><i class="fas fa-bars"></i>SHOP CATEGORIES</p>
+			<p class="head">BRANDS</p>
+			<p class="head">NEW</p>
+			<p class="head">OFFERS</p>
+			
 
 		</div>
 
@@ -119,15 +120,88 @@
 	<div class="align-top">
 	
 
-	<input type="text"/>
-	<a id="search"><i class="fas fa-search fa-lg"></i></a>
+	<input type="text" id="no-outline"/>
+	<a id="search3" href="#"><i class="fas fa-search fa-lg"></i></a>
 </div>
 
 
   </div>
   </div>
 
-</div> 		
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="mymode" class="model">
+
+  <!-- Modal content -->
+  <div id="content">
+    <span class="close1">&times;</span>
+    
+<div id="reg">
+	<p class="line">Fragance</p>
+	<p>MakeUp</p>
+	<p>Skin Care</p>
+	<p>Hair care</p>
+</div>
+
+
+<div id="sub">
+
+<div id="sub-categories">
+	<h4>FRAGRANCE FOR WOMEN</h4>
+	<a href="#">Perfumes</a>
+	<a href="#">Deodrants & Roll-ons</a>
+	<a href="#">Body Mists and Prays</a>
+	<a href="#">perfumed creams and solid perfumes</a>
+
+
+	</div>
+
+
+<div id="sub-categories2">
+	<h4>FRAGRANCE FOR WOMEN</h4>
+	<a href="#">Perfumes</a>
+	<a href="#">Deodrants & Roll-ons</a>
+	<a href="#">Colognes</a>
+	<a href="#">Aftershave</a>
+
+
+	</div>
+
+	<div>
+		<h4>Gifts and value sets</h4>
+	</div>
+</div>
+
+
+
+
+  </div>
+  </div>
+
+</div> 	
+
 
 
 
@@ -172,6 +246,43 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+var moda = document.getElementById("mymode");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("mybt");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on the button, open the modal
+btn1.onmouseover = function() {
+  moda.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onmouseout = function() {
+  moda.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == moda) {
+    moda.style.display = "none";
+  }
+  }
 
 
 
