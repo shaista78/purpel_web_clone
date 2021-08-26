@@ -13,16 +13,22 @@
    }
    h2{
        background-color:#E0E0E0; 
+       margin-top: 0px;
    }
    #Add_form > div{
      margin-top: 50px;
-        
+     border: 1px solid white;
+     border-bottom: 1px solid gray;
+     width: 70%;
    }
-   #exam{
-    box-sizing: border-box;
+   #Add_form > div > input{
+       border: 0px solid white;
+       margin-bottom: 10px;
+       outline: none;
    }
    #cit_stat{
        display:flex;
+
    }
    #stat{
        margin-left: 30px;
@@ -38,8 +44,37 @@
        height: 30px;
        max-width: 200px;
        color: white;
-       background-color:#dd307e;
-       border-radius: 4px;
+       background-color:#e02378;
+       border-radius: 2px;
        text-align: center;
-       margin-left: 30%;
+       margin: auto;
    }
+   #continue > p{
+       margin: auto;
+       padding-top: 6px;
+   }
+   #manage{
+       display: flex;
+       margin-left: 0px;
+   }
+   #Jeet{
+       margin-left: 20px;
+       border: 0px solid white;
+   }
+   #Jeet > input{
+       border: 1px solid white;
+       outline: none;
+    
+   }
+   #cit_stat > div > input{
+       border: 0px solid white;
+       margin-bottom: 10px;
+       outline: none;
+   }
+  #Jeet  > input{
+      margin-bottom: 10px;
+      outline: none;
+  }
+  select{
+      border: none;
+  }
