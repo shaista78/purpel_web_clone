@@ -1,8 +1,32 @@
 var user = [];
 
 
+<<<<<<< HEAD
 if (localStorage.getItem("user") == null) {
 
+=======
+// function tes (){
+//     var holder = document.getElementById("nu");
+//     holder.style. = '#FFAB91';
+// //    holder.style. = '';
+// }
+// function set (){
+//     var holder = document.getElementById("nu");
+//     holder.style.background = '#E3F2FD';
+
+// }
+
+//  function hol (){
+//     var botn = document.getElementById("btn");
+//      botn.style.background = 'red';
+// alert("yes")
+//  }
+var user = [];
+
+
+if (localStorage.getItem("user") == null) {
+
+>>>>>>> 2cea9d83acb3d488e618801e84c7ab29ccf43094
     localStorage.setItem("user", JSON.stringify([]));
 }
 var againget = localStorage.getItem("user");
@@ -54,4 +78,12 @@ function check(out) {
             alert("congrats")
         }
     }));
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+
+>>>>>>> 2cea9d83acb3d488e618801e84c7ab29ccf43094
