@@ -44,7 +44,7 @@
 </html>
 <script>
 
-    let card_data = JSON.parse(localStorage.getItem("card"));
+     let card_data = JSON.parse(localStorage.getItem("card"));
     console.log("card_data:", card_data);
 
     let data_div = document.getElementById("data");
@@ -73,7 +73,9 @@
         div.append(image, p_name);
 
         data_div.append(div);
-         total = total + Number(product.price);
+        var out = product.price;
+        var x = out.replace("₹","0")
+         total = total + Number(x);
          console.log(total);
          totalitem = totalitem+Number(1);
     });
