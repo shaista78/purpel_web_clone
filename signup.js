@@ -29,12 +29,13 @@ if (againget !== null) {
     user = JSON.parse(againget);
 }
 function store() {
-    console.log(check());
+    check();
     var inputmob = document.getElementById("nu").value;
     var inputpass = document.getElementById("pas").value;
     if (inputmob.length == 0 || inputmob.length < 10 || inputmob.length > 10) {
 
         var msg = document.getElementById("mess");
+        
         msg.innerText = "Please enter vailid Number";
         return;
     }
@@ -58,8 +59,9 @@ function store() {
     user.push(objuser);
     var out = objuser.name;
     localStorage.setItem("user", JSON.stringify(user));
-   
-
+   document.getElementById("nu").value = "";
+   document.getElementById("pas").value = "";
+    // document.getElementById("mess").value = "";
 }
 
 function check() {
@@ -73,20 +75,24 @@ function check() {
     var chk= document.getElementById("check");
    for(var i = 0; i < use.length; i++){
        if(use[i].name === inputmob){
-           
+         if(use[i].password === inputpass){  
            var masg = "you are logged in";
            chk.innerText="log"
            return;
-
+         }else {
+             chk.innerText="wrong password"
+             return;
+         }
        }
    
-   if(inputmob.length >  9 && inputpass.length > 7 )
+  else if(inputmob.length === 10 && inputpass.length > 7 )
     
-    var msg2 ="u singed in success";
+    {var msg2 ="u singed in success";
   
-    return chk.innerText= "ok";
+    return chk.innerText= "signup";}
    
    }
+   
 }
 
 
