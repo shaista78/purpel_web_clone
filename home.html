@@ -44,7 +44,7 @@
 
 				 <a href="#"><i class="far fa-heart fa-3x"></i></a>
                  <a href="#" id="face" onmouseover="new1()"><i class="far fa-smile fa-3x" id="face"></i></i></a>
-                 <div id="abc">Abcdefghijklmnopqrstuvwxyz</div>
+               
                  <a href="#"><i class="fas fa-cart-plus fa-3x"></i></i></a>
 			</div>
 			
@@ -79,11 +79,27 @@
 			<img src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1629219051_personal-care.jpg"/>
 		</div>
 
-		<div id="Best-sellers">
-			
+		<div class="popup" id="popup-1">
+	<div class="overlay"></div>
+	<div class="content" id="centr">
+		<!--<div class="close-btn">&times;</div> -->
+		
 
-			
-		</div>
+		<div id="data">
+
+
+
+		
+		<button id="signin">Sign in</button>
+		<a>New customer? start here.</a>
+		<a>Your orders</a>
+		<a>Your account</a>
+		<a>Your wishlist</a>
+		
+	</div>
+	</div>
+</div>
+
 
 
 		
@@ -93,8 +109,11 @@
 </html>
 <script>
 	function new1(){
-		alert("welcome");
+		document.getElementById("popup-1").classList.toggle("active");
+		
 	}
+
+
 
 </script>
 
