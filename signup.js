@@ -97,14 +97,14 @@ function check() {
              return;
          }
        }
-   }
-   if(inputmob.length === 10 && inputpass.length > 7 )
+   
+  else if(inputmob.length === 10 && inputpass.length > 7 )
     
     {var msg2 ="u singed in success";
   
     return chk.innerText= "Account Created Successfully! Please use your credentials to login";}
    
-   
+   }
 //    msg.value = "";
 }
 
