@@ -84,8 +84,10 @@ function check() {
        if(use[i].name === inputmob){
          if(use[i].password === inputpass){  
            var masg = "you are logged in";
-           chk.innerText="log"
-           return;
+           chk.innerText="logged in Successfully";
+           window.location.href="AfterLogin.html";
+
+           return ;
          }else {
              chk.innerText="wrong password"
              return;
@@ -96,7 +98,7 @@ function check() {
     
     {var msg2 ="u singed in success";
   
-    return chk.innerText= "signup";}
+    return chk.innerText= "Account Created Successfully! Please use your credentials to login";}
    
    }
 //    msg.value = "";
