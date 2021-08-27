@@ -455,3 +455,13 @@ input{
 	cursor: pointer;
 	color: #F50057;
        }
+
+       .close{
+       	margin-right: 70px;
+       }
+
+
+       #butt{
+       	color: #fff;
+       	height: 25px;
+       }
