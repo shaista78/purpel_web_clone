@@ -7,13 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="address.css">
-    <!-- <script src="addres.js"></script> -->
     
 </head>
 
 <body>
-    <div ></div>
-    <P id="abc"></P>
     <div id="box">
         <div id="Address">
             <div id="T_bar">
@@ -80,7 +77,7 @@
         <div id="smallBox">
             <div>
                 <div>Total MRP:</div>
-               <p id="mrp"></p>
+                <div id="mrp"></div>
             </div>
             <div>
                 <div class="ship">Shipping charges:</div>
@@ -92,8 +89,8 @@
             </div>
             <div>
                 
-                <h3>Order total</h3>
-                <div ></div>
+                
+                <div></div>
             </div>
            
         </div>
@@ -103,8 +100,10 @@
     <p>Address type prefrences are used to plan your delivery.However,shipments can sometimes</p>
     <p>arrive early or later then planned</p>
     <div id="continue">
-        <p onclick="addAddress()"> SAVE & CONTINUE</p>
+        <p onclick="addAddress()"  > SAVE & CONTINUE</p>
     </div>
+    <br>
+    <br>
     </div>
 
     
@@ -164,7 +163,7 @@ var total = 0;
 
     if(total_h1){
 
-    total_h1.innerHTML = total;
+    total_h1.innerHTML = "₹"+total;
 }
 
     // var totalitems = document.getElementById("totalitem");
