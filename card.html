@@ -14,13 +14,17 @@
         #data {
             display: grid;
             grid-template-columns: 60%;
-           grid-gap: 4%;
+           grid-gap: 2%;
            
         }
   #data div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+             box-shadow: 0 0 40px 20px rgba(240, 7, 170, 0.15);
+             margin-left: 30%;
+             border-radius: 15px;
         }
             .txt {
             height: 42px;
@@ -104,7 +108,8 @@
         let p_name = document.createElement("p");
 
         p_name.innerText = product.name;
-       // p_name.setAttribute("class","txt")
+        p_name.style.float="left";
+        p_name.setAttribute("class","txt")
     
 
         let p_price = document.createElement("p");
