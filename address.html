@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="address.css">
+        <script src="addres.js"></script>
     </head>
 
     <body>
@@ -22,50 +23,55 @@
                     <option value="Miss">Miss</option>
                 </select>
                 <div id="Jeet">
-                    <label>Name*</label>
-                    <input type="text"/>     
+                    <input id="nam" type="text" />
+                </div>
             </div>
-        </div>
             <div>
                 <label>Pincode*</label>
-                <input type="number"/>
+                <input id="pin" type="number" />
             </div>
             <div>
                 <label>Address*</label>
-                <input type="text">
+                <input id="division" type="text">
             </div>
             <div>
                 <label>Landmark</label>
                 <input type="text">
             </div>
             <div id="cit_stat">
-            <div>
-                <label>city</label>
-                <input type="text">
+                <div>
+                    <label>city</label>
+                    <input id="cit" type="text">
+                </div>
+                <div>
+                    <label id="stat">State</label>
+                    <input id="sta" type="text">
+                </div>
             </div>
-            <div>
-                <label id="stat">State</label>
-                <input type="text">
-            </div>
-        </div>
             <div>
                 <label>Mobile*</label>
-                <input type="number">
+                <input id="phone" type="number">
+            </div>
+        </form>
+    </div>
+    <div id="T_add">
+        <h3>Address type</h3>
+        <select>
+            <option value="Home">Home</option>
+            <option value="Office">Office</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+   
             </div>
             </form>
             </div>
-            <div id="T_add">
-            <h3>Address type :</h3>
-            <select>
-                <option value="Home">Home</option>
-                <option value="Office">Office</option>
-                <option value="Others">Others</option>
-            </select>
+           
         </div>
         <p>Address type prefrences are used to plan your delivery.However,shipments can sometimes</p>
             <p>arrive early or later then planned</p>
             <div id="continue">
-            <p> SAVE & CONTINUE</p>
+            <p onclick="addAddress()"> SAVE & CONTINUE</p>
             </div>
         
             </div>
