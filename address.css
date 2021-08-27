@@ -1,9 +1,45 @@
+#box{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
 #Address{
     border: 2px solid #E0E0E0 ;
     width: 50%;
-    
+   
     
    }
+  
+/* #box > div {
+    display: flex;
+} */
+
+#mini{
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 5%;
+   
+}
+#smallBox > div {
+    width: 100%;
+    
+    border: 1px solid red;
+    display: flex;
+   
+}
+.mrp{
+
+    margin-left: 50%;
+}
+.ship{
+    margin-right: 50%;
+}
+.dis{
+    margin-left: 50%;
+}
+#help{
+    border: 1px solid gray;
+}
    #T_bar{
        /* max-width: 600px;
        max-height: 50px; */
