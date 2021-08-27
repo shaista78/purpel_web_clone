@@ -35,12 +35,16 @@ var total = 0;
         var out = product.price;
         var x = out.replace("₹","0")
          total = total + Number(x);
-         console.log(total);
+        //  console.log(total);
          totalitem = totalitem+Number(1);
     });
-    var total_h1 = document.getElementById("mrp");
+    console.log(total);
+    var tot = document.getElementById("abc");
 
-    total_h1.innerHTML = "cart value -"+total;
+    tot.innerHTML =total;
+    // var di = document.getElementById("smallbox");
+    // di.append(total_h1);
+   
 
     // var totalitems = document.getElementById("totalitem");
 

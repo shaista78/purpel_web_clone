@@ -20,7 +20,11 @@ body{
 /* #box > div {
     display: flex;
 } */
-
+#mrp{
+    margin-left: 62%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
 #mini{
     margin-top: 100px;
     width: 30%;
