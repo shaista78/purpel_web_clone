@@ -31,6 +31,35 @@
             margin-top: 5px;
             line-height: 21px;
         }
+        #total{
+            float: right;
+            font-style: italic;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 30px;
+        }
+        #totalitem{
+            float: right;
+             height: 40px;
+             font-style: italic;
+        font-size: 20px;
+        margin-right: 30px;
+        }
+        .clear{
+            clear: both;
+        }
+        span {
+  background: rgb(230,157,231);
+  border-radius: 50% 0%;
+  box-shadow: 0 0 6px rgb(41,185,82), 0 0 3px beige inset;
+  padding: .8em 1.8em;
+  box-decoration-break: clone;
+}
+p:nth-of-type(2) span {
+  background-clip: content-box;
+}
+
+
 
     </style>
 </head>
@@ -50,9 +79,11 @@
         </div>
 
    
+<p ><span id="total"></span></p>
+    
+    <p class="clear"></p>
+    <p ><span id="totalitem"></span></p>
 
-    <p id="total"></p>
-<p id="totalitem"></p>
     <div id="data"></div>
 
 </body>
@@ -97,11 +128,11 @@
     });
     var total_h1 = document.getElementById("total");
 
-    total_h1.innerText = `Total Price- ${total}`
+    total_h1.innerText = `Total Price  -   ₹${total}`
 
     var totalitems = document.getElementById("totalitem");
 
-    totalitems.innerText = `Total Items- ${(totalitem)}`
+    totalitems.innerText = `Total Items  - ${(totalitem)}`
 
    
  
