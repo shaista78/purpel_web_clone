@@ -49,8 +49,10 @@ function store() {
     }
     var msg1 = document.getElementById("mess");
     var msg2 = document.getElementById("mess1");
+    var msg3 =  document.getElementById("wr");
     msg1.innerText = "";
     msg2.innerText = "";
+    // msg3.innerText = "";
     if (localStorage.getItem("user") > 0) {
         var namedata = localStorage.getItem()
     }
@@ -80,6 +82,7 @@ function check() {
         var use = JSON.parse(againget);
     }
     var chk= document.getElementById("check");
+    var chk1= document.getElementById("wr");
    for(var i = 0; i < use.length; i++){
        if(use[i].name === inputmob){
          if(use[i].password === inputpass){  
@@ -89,7 +92,7 @@ function check() {
 
            return ;
          }else {
-             chk.innerText="wrong password"
+             chk1.innerText="Wrong password"
              return;
          }
        }
