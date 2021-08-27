@@ -1,15 +1,15 @@
 body{
-    width: 1900px;
+    width: 100%x;
     
     }
     #box{
     
-    width: 1000px;
+    width: 60%;
    float: left;
 }
 #Address{
     border: 2px solid #E0E0E0 ;
-    width: 1000px;
+    width: 80%;
    
     
    }
@@ -19,7 +19,7 @@ body{
 } */
 
 #mini{
-    width: 800px;
+    width: 40%;
   
     float:right;
    
