@@ -1,12 +1,4 @@
 body{
-<<<<<<< HEAD
-    width: 100%x;
-    
-    }
-    #box{
-    
-    width: 60%;
-=======
     width: 75%;
     margin: auto;
     /* border: 1px solid red; */
@@ -15,17 +7,12 @@ body{
     #box{
  
     width: 55%;
->>>>>>> 8df6f5d88ed1f69a2234d2a85c88172960d9a361
    float: left;
    margin-right: 50px;
 }
 #Address{
     border: 2px solid #E0E0E0 ;
-<<<<<<< HEAD
-    width: 80%;
-=======
     /* width: 100%; */
->>>>>>> 8df6f5d88ed1f69a2234d2a85c88172960d9a361
    
     
    }
@@ -35,14 +22,9 @@ body{
 } */
 
 #mini{
-<<<<<<< HEAD
-    width: 40%;
-  
-=======
     margin-top: 100px;
     width: 30%;
   /* border: 1px solid yellow; */
->>>>>>> 8df6f5d88ed1f69a2234d2a85c88172960d9a361
     float:right;
    margin-right: 5%;
    color: #90A4AE;

@@ -29,7 +29,7 @@ a:hover{
 	text-decoration: none;
 	border: none;
 	background-color: none;
-	margin-bottom: ;
+	
 }
 
 #line-one{
@@ -110,7 +110,7 @@ p:hover{
 #head{
 	font-size: 16px;
 	font-weight: 600;
-	font-family:;
+
 }
 
 
@@ -127,10 +127,7 @@ position:absolute;
 	box-shadow: 0,0,0,0 rgba(0,0,0,0.26);
 }
 
-#face: hover{
-	background-color: green;
 
-}
 
 #abc{
 	visibility: none;
@@ -155,7 +152,7 @@ position:absolute;
 	margin-top: 40px;
 	gap: 30px;
 	width: 90%;
-	margin-left: 30px;
+	margin-left: 8%;
 	margin-right: auto;
 }
 
@@ -188,7 +185,7 @@ position:absolute;
 			background: #fff;
 			width: 200px;
 			height: 200px;
-			z-index: ;
+			
 			
 			padding: 20px;
 			box-sizing: border-box;
@@ -450,7 +447,7 @@ input{
 
        
 
-       .#mybt:hover{
+       #mybt:hover{
        	text-decoration: underline 2px solid #F50057;
 	cursor: pointer;
 	color: #F50057;
