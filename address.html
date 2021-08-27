@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="address.css">
-        <script src="addres.js"></script>
-    </head>
 
-    <body>
-        <div id="box">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="address.css">
+    <script src="addres.js"></script>
+</head>
+
+<body>
+    <div id="box">
         <div id="Address">
             <div id="T_bar">
                 <h2>Add New Address</h2>
-            
-               
-            <form id="Add_form">
-                <div id="manage">
+
+
+                <form id="Add_form">
+                    <div id="manage">
+                        <select>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                        </select>
+                        <div id="Jeet">
+                            <label>Name</label>
+                            <input id="nam" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label>Pincode*</label>
+                        <input id="pin" type="number" />
+                    </div>
+                    <div>
+                        <label>Address*</label>
+                        <input id="division" type="text">
+                    </div>
+                    <div>
+                        <label>Landmark</label>
+                        <input type="text">
+                    </div>
+                    <div id="cit_stat">
+                        <div>
+                            <label>city</label>
+                            <input id="cit" type="text">
+                        </div>
+                        <div>
+                            <label id="stat">State</label>
+                            <input id="sta" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Mobile*</label>
+                        <input id="phone" type="number">
+                    </div>
+                </form>
+            </div>
+            <div id="T_add">
+                <h3>Address type</h3>
                 <select>
-                    <option value="Mr">Mr</option>
-                    <option value="Mrs">Mrs</option>
-                    <option value="Miss">Miss</option>
+                    <option value="Home">Home</option>
+                    <option value="Office">Office</option>
+                    <option value="Others">Others</option>
                 </select>
-                <div id="Jeet">
-                    <label>Name</label>
-                    <input id="nam" type="text" />
-                </div>
             </div>
-            <div>
-                <label>Pincode*</label>
-                <input id="pin" type="number" />
-            </div>
-            <div>
-                <label>Address*</label>
-                <input id="division" type="text">
-            </div>
-            <div>
-                <label>Landmark</label>
-                <input type="text">
-            </div>
-            <div id="cit_stat">
-                <div>
-                    <label>city</label>
-                    <input id="cit" type="text">
-                </div>
-                <div>
-                    <label id="stat">State</label>
-                    <input id="sta" type="text">
-                </div>
-            </div>
-            <div>
-                <label>Mobile*</label>
-                <input id="phone" type="number">
-            </div>
+
+        </div>
         </form>
     </div>
-    <div id="T_add">
-        <h3>Address type</h3>
-        <select>
-            <option value="Home">Home</option>
-            <option value="Office">Office</option>
-            <option value="Others">Others</option>
-        </select>
-    </div>
-   
+
+    
+    <div id="mini">
+        <div id="help">Need help? 922330022</div>
+        <h3>Price Details</h3>
+        <div id="smallBox">
+            <div>
+                <div>Total MRP:</div>
+                <div class="mrp">tr</div>
             </div>
-            </form>
+            <div>
+                <div class="ship">Shipping charges:</div>
+                <div>Free</div>
             </div>
-           
+            <div>
+                <div>Coupon Discount:</div>
+                <div class="dis">Applied</div>
+            </div>
+            <div>
+                <div>Order total</div>
+                <div></div>
+            </div>
         </div>
-        <p>Address type prefrences are used to plan your delivery.However,shipments can sometimes</p>
-            <p>arrive early or later then planned</p>
-            <div id="continue">
-            <p onclick="addAddress()"> SAVE & CONTINUE</p>
-            </div>
-        
-        </div>
-        <div id="mini">
-            <div id="help">Need help? 922330022</div>
-            <h3>Price Details</h3>
-            <div id="smallBox">
-                <div>
-                    <div>Total MRP:</div>
-                    <div class="mrp">tr</div>
-                </div>
-               <div>
-                   <div class="ship">Shipping charges:</div>
-                   <div >Free</div>
-               </div>
-               <div>
-                   <div>Coupon Discount:</div>
-                   <div class="dis">Applied</div>
-               </div>
-               <div>
-                   <div>Order total</div>
-                   <div></div>
-               </div>
-            </div>
-       
+
     </div>
-    </body>
+    <div class="clear"></div>
+    <div class="flt">
+    <p>Address type prefrences are used to plan your delivery.However,shipments can sometimes</p>
+    <p>arrive early or later then planned</p>
+    <div id="continue">
+        <p onclick="addAddress()"> SAVE & CONTINUE</p>
+    </div>
+    </div>
+
+    
+
+</body>
+
 </html>

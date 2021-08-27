@@ -1,11 +1,15 @@
-#box{
-    display: flex;
-    width: 80%;
-    margin: auto;
+body{
+    width: 1900px;
+    
+    }
+    #box{
+    
+    width: 1000px;
+   float: left;
 }
 #Address{
     border: 2px solid #E0E0E0 ;
-    width: 50%;
+    width: 1000px;
    
     
    }
@@ -15,9 +19,9 @@
 } */
 
 #mini{
-    width: 30%;
-    margin-top: 100px;
-    margin-left: 5%;
+    width: 800px;
+  
+    float:right;
    
 }
 #smallBox > div {
@@ -72,6 +76,7 @@
    #T_add{
        display: flex;
        margin-top: 30px;
+       
    }
    select{
        margin-left: 20px;
@@ -114,3 +119,9 @@
   select{
       border: none;
   }
+  .clear{
+      clear: both;
+  }
+.flt{
+    float: left;
+}
