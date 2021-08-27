@@ -23,3 +23,27 @@ function addAddress(){
     address.push(objpro);
     localStorage.setItem("address",JSON.stringify(address));
 };
+
+
+let card_data = JSON.parse(localStorage.getItem("card"));
+console.log("card_data:", card_data);
+
+var total = 0;
+    var totalitem =0;
+
+    card_data.forEach(function (product) {
+        var out = product.price;
+        var x = out.replace("₹","0")
+         total = total + Number(x);
+         console.log(total);
+         totalitem = totalitem+Number(1);
+    });
+    var total_h1 = document.getElementById("mrp");
+
+    total_h1.innerHTML = "cart value -"+total;
+
+    // var totalitems = document.getElementById("totalitem");
+
+    // totalitems.innerText = `Total Items  - ${(totalitem)}`
+
+   
