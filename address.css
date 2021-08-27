@@ -1,15 +1,18 @@
 body{
-    width: 1900px;
-    
+    width: 75%;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 20px;
     }
     #box{
-    
-    width: 1000px;
+ 
+    width: 55%;
    float: left;
+   margin-right: 50px;
 }
 #Address{
     border: 2px solid #E0E0E0 ;
-    width: 1000px;
+    /* width: 100%; */
    
     
    }
@@ -19,15 +22,22 @@ body{
 } */
 
 #mini{
-    width: 800px;
-  
+    margin-top: 100px;
+    width: 30%;
+  /* border: 1px solid yellow; */
     float:right;
-   
+   margin-right: 5%;
+   color: #90A4AE;
+ 
 }
+h3{
+    color: black;
+}
+
 #smallBox > div {
     width: 100%;
-    
-    border: 1px solid red;
+    padding: 10px;
+    /* border: 1px solid red; */
     display: flex;
    
 }
@@ -42,7 +52,11 @@ body{
     margin-left: 50%;
 }
 #help{
-    border: 1px solid gray;
+    border: 1px solid #CFD8DC;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+  color: #90A4AE;
 }
    #T_bar{
        /* max-width: 600px;
