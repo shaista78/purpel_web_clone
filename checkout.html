@@ -68,7 +68,7 @@
 
 					<p id="in">Credit/Debit Card</p>
 
-					<form action="Order.html" method="post">
+					<form  >
 						<div id="debit">
 							<input type="text" placeholder="Name on card" required>
 							<div id="card-top">
@@ -89,7 +89,7 @@
 							</div>
 							<div id="gif"></div>
 
-							<button onclick="makepay()" id="bt">PAY</button>
+							<button onclick="makepay(event)" id="bt">PAY</button>
 						</div>
 					</form>
 					
@@ -169,8 +169,8 @@
 
 		totalitem = totalitem + Number(1);
 	});
-	function makepay() {
-		
+	function makepay(e) {
+		e.preventDefault();
 			var img = document.createElement("img");
 
 			img.src = "https://1.bp.blogspot.com/-TUnIV6lCpUI/Ug5AjWt-L5I/AAAAAAAABRY/X5083DNXw28/s1600/LoadingWait.gif";
@@ -179,7 +179,7 @@
 		
 		setTimeout(function () {
 			window.location.href = "Order.html";
-		},5000);
+		},3000);
 	}
 	console.log(total);
 	var tot = document.getElementById("rupee");
