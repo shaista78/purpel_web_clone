@@ -104,6 +104,10 @@ button{
 	font-size: 16px;
 }
 
-.free{
-	color: #F50057;
+#second > div > p{
+	color: #90A4AE;
+	border: 1px red;
+}
+#lal{
+	color: red;
 }

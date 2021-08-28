@@ -111,6 +111,7 @@ h3{
        border-radius: 2px;
        text-align: center;
        margin: auto;
+       border: 0px solid #e02378;
    }
    #continue > p{
        margin: auto;
