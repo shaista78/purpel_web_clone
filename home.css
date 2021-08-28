@@ -460,3 +460,15 @@ input{
        	color: #fff;
        	height: 25px;
        }
+
+	   .cls{
+	padding: 80px;
+	margin-top: 0px;
+	
+}
+
+#banner1 img{
+	width: 20%;
+	padding: 20px;
+	margin-top: 0px;
+}
