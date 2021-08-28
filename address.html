@@ -7,17 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="address.css">
-    
+    <script src="https://kit.fontawesome.com/c4e502dbf0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Top.css">
 </head>
 
 <body>
+    
+    <div id="top-box">
+        <div><a href="AfterLogin.html"><img id="logo" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"/></a></div>
+                <div class="basket-icons"> 
+    
+                     <a href="card.html"><i class="far fa-heart fa-3x" id="face"></i></a>
+    
+    
+                   
+                   
+                     <a href="checkout.html"><i class="fas fa-cart-plus fa-3x" id="check"></i></i></a>
+                </div>
+                
+            </div>
+<div id="toop">
     <div id="box">
         <div id="Address">
             <div id="T_bar">
                 <h2>Add New Address</h2>
 
 
-                <form id="Add_form">
+                <form action="checkout.html" method="post" id="Add_form" >
                     <div id="manage">
                         <select>
                             <option value="Mr">Mr</option>
@@ -26,34 +42,34 @@
                         </select>
                         <div id="Jeet">
                             <label>Name</label>
-                            <input id="nam" type="text" />
+                            <input id="nam" type="text" required />
                         </div>
                     </div>
                     <div>
                         <label>Pincode*</label>
-                        <input id="pin" type="number" />
+                        <input id="pin" type="number" required/>
                     </div>
                     <div>
                         <label>Address*</label>
-                        <input id="division" type="text">
+                        <input id="division" type="text" required/>
                     </div>
                     <div>
                         <label>Landmark</label>
-                        <input type="text">
+                        <input type="text" required/>
                     </div>
                     <div id="cit_stat">
                         <div>
                             <label>city</label>
-                            <input id="cit" type="text">
+                            <input id="cit" type="text" required/>
                         </div>
                         <div>
                             <label id="stat">State</label>
-                            <input id="sta" type="text">
+                            <input id="sta" type="text" required/>
                         </div>
                     </div>
                     <div>
                         <label>Mobile*</label>
-                        <input id="phone" type="number">
+                        <input id="phone" type="number" required/>
                     </div>
                 </form>
             </div>
@@ -67,6 +83,7 @@
             </div>
 
         </div>
+      
         </form>
     </div>
 
@@ -100,13 +117,12 @@
     <p>Address type prefrences are used to plan your delivery.However,shipments can sometimes</p>
     <p>arrive early or later then planned</p>
     <div id="continue">
-        <p onclick="addAddress()"  > SAVE & CONTINUE</p>
-    </div>
+        <button onclick="addAddress()">SAVE AND CONTINUE</button> 
+      
     <br>
     <br>
     </div>
-
-    
+</div>
 
 </body>
 
@@ -140,6 +156,7 @@ function addAddress(){
     } 
     address.push(objpro);
     localStorage.setItem("address",JSON.stringify(address));
+    window.location.href="checkout.html";
 };
 
 
@@ -164,8 +181,8 @@ var total = 0;
     if(total_h1){
 
     total_h1.innerHTML = "₹"+total;
-}
 
+    }
     // var totalitems = document.getElementById("totalitem");
 
     // totalitems.innerText = `Total Items  - ${(totalitem)}`

@@ -3,7 +3,7 @@
 	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.15);
 	display: flex;
 	margin-top: 0;
-	
+	width: 100%;
 	padding: 10px 10px;
 	position: sticky;
 	top: 0;
