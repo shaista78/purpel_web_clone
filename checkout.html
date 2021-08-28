@@ -73,7 +73,7 @@
         	<input type="checkbox" value="checked"><p>Save Card for future use</p>
         </div>
      
-        	<a href="Order.html"><button id="bt">PAY</button></a>
+        	<button onclick="makepay()" id="bt">PAY</button>
             </div>
 </form>
 
@@ -154,8 +154,7 @@ var total = 0;
     });
 	function makepay() {
         setTimeout(function () {
-            var msg = document.getElementById("msg")
-        msg.innerText="Your order is successfully placed";
+             window.location.href="Order.html";
         }, 3000);
     }
      console.log(total);
