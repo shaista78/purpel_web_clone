@@ -14,13 +14,22 @@
         #data {
             display: grid;
             grid-template-columns: 60%;
-           grid-gap: 4%;
+           grid-gap: 1%;
            
         }
   #data div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 55%;
+             box-shadow: 0 0 40px 20px rgba(0,0,0,0.2);
+             margin-left: 400px;
+             border-radius: 15px;
+             height: 180px;
+             padding: 10px;
+        }
+        img{
+            width: 30%;
         }
             .txt {
             height: 42px;
@@ -37,18 +46,19 @@
     box-shadow: 0 0 40px 20px rgba(240, 7, 170, 0.15);
 	
     float: right;
-            font-style: italic;
+            
       
         font-size: 25px;
-        margin: 30px;
-        padding: 0px;
-        width: 250px;
-        height: 150px;
+        margin-top:30px;
+        padding: 12px;
+        width: 450px;
+        height: 290px;
+        margin-right: 300px;
         
 }
 #top button{
     
-    width: 100%;
+    width: 450px;
     height: 40px;
     background-color: rgb(212, 20, 180);
 }
@@ -61,7 +71,17 @@
             font-size: 20px;
             color: wheat;
         }
+        #help{
+            text-align: center;
+        }
+        .clr{
+            clear: both;
+        }
+       .flt{
+           float:right;
+        }
     </style>
+   
 </head>
 
 <body>
@@ -78,12 +98,28 @@
             
         </div>
         <h1>Card Items</h1>
-<div id="top">
+ <!-- <div id="top">
    
 <p  id="total"></p> 
     <p  id="totalitem"></p>
     <button><a href="address.html">payment</a></button>
-</div>
+</div> -->
+ <div id="top">
+        <div id="help">Need help? 922330022</div>
+        <h3>Price Details</h3>
+        <div id="smallBox">
+            <div>
+                <div>Total MRP:</div>
+                <div id="mrp"></div>
+            </div>
+        
+                <h3>Order total</h3>
+                <div></div>
+            </div>
+<button><a href="address.html">Place order</a></button>
+           
+        </div>
+    </div>
     <div id="data"></div>
 
 </body>
@@ -104,7 +140,8 @@
         let p_name = document.createElement("p");
 
         p_name.innerText = product.name;
-       // p_name.setAttribute("class","txt")
+        p_name.style.float="left";
+        p_name.setAttribute("class","txt")
     
 
         let p_price = document.createElement("p");
