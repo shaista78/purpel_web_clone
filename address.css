@@ -112,6 +112,7 @@ h3{
        text-align: center;
        margin: auto;
        border: 0px solid #e02378;
+       cursor: pointer;
    }
    #continue > p{
        margin: auto;
