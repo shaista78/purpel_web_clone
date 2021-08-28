@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="Top.css">
+	<link rel="stylesheet" href="Checkout.css">
+
+	<style>
+
+	#second{
+		
+		height: 500px;
+		
+	}
+
+	#first{
+		
+		height: 500px;
+	}
+	#MainPage{
+		display: grid;
+		width: 80%;
+		grid-template-columns: 55% 30%;
+		grid-gap: 5%;
+		margin-top: 140px;
+		margin-left: auto;
+		margin-right: auto;
+
+
+	}
+		
+	</style>
+	
+</head>
+<body>
+<div id="top-box">
+    <div><a href="AfterLogin.html"><img id="logo" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"/></a>
+    </div>
+
+
+
+
+
+
+
+	<div id="MainPage">
+
+		<div id="first">
+			
+
+<div id="green">
+        		
+
+        		<p id="in">Credit/Debit Card</p>
+
+        		<div id="debit">
+        			<input type="text" placeholder="Name on card" required>
+        		<div id="card-top">
+        			<input type="text" placeholder="Card number" id="card" required/>
+        			<input type="text" placeholder="CVV" id="input" required>
+        		</div>
+        		<div id="card-bottom">
+        			<input type="text" placeholder="Expiry MM" id="input" required>
+        			<input type="text" placeholder="Expiry YY" id="input" required>
+        		</div>
+        		
+        	</div>
+
+        	<div>
+        		<div id="checkboxx">
+        	<input type="checkbox" value="checked"><p>Save Card for future use</p>
+        </div>
+        	<a href="Order.html"><button id="bt">PAY</button></a>
+            </div>
+
+
+    	</div>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div id="second">
+			<div id="line"></div>
+			
+
+         
+			<h4>Price Details:</h4>
+
+			<div id="new1">
+			<p>Total MRP</p>
+			<p id="rupee"></p>
+			</div>
+
+
+			<div id="new1">
+			<p>Sub Total</p>
+			<p id="subtotal"></p>
+			</div>
+
+
+
+			<div id="new1">
+			<p class>Shipping Charges</p>
+			<p id="rupee" class="free">Free</p>
+			</div>
+
+           <div id="line"></div>
+
+			<div id="new1">
+			<p>Order Total</p>
+			<p id="total"></p>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+
+	</div>
+
+</body>
+</html>
+
+<script>
+
+let card_data = JSON.parse(localStorage.getItem("card"));
+console.log("card_data:", card_data);
+
+var total = 0;
+    var totalitem =0;
+
+    card_data.forEach(function (product) {
+        var out = product.price;
+        var x = out.replace("₹","0")
+         total = total + Number(x);
+        
+         totalitem = totalitem+Number(1);
+    });
+
+     console.log(total);
+    var tot = document.getElementById("rupee");
+    var subtotal = document.getElementById("subtotal");
+    var total_order = document.getElementById("total");
+    var bt = document.getElementById("bt");
+    subtotal.innerHTML = `&#x20B9;${total}`;
+    total_order.innerHTML = `&#x20B9;${total}`;
+    bt.innerHTML = `PAY &#x20B9;${total}`;
+     tot.innerHTML = `&#x20B9;${total}`;
+   
+</script>
