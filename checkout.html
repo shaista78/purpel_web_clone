@@ -61,11 +61,12 @@
         		
 
         		<p id="in">Credit/Debit Card</p>
-
+        		
+                 <form action="Order.html" method="post">
         		<div id="debit">
         			<input type="text" placeholder="Name on card" required>
         		<div id="card-top">
-        			<input type="text" placeholder="Card number" id="card" required/>
+        			<input type="text" placeholder="Card number" id="card" required>
         			<input type="text" placeholder="CVV" id="input" required>
         		</div>
         		<div id="card-bottom">
@@ -79,9 +80,10 @@
         		<div id="checkboxx">
         	<input type="checkbox" value="checked"><p>Save Card for future use</p>
         </div>
-        	<a href="Order.html"><button id="bt">PAY</button></a>
+     
+        	<button onclick="makepay()" id="bt">PAY</button>
             </div>
-
+</form>
 
     	</div>
 
@@ -158,7 +160,11 @@ var total = 0;
         
          totalitem = totalitem+Number(1);
     });
-
+	function makepay() {
+        setTimeout(function () {
+             window.location.href="Order.html";
+        }, 3000);
+    }
      console.log(total);
     var tot = document.getElementById("rupee");
     var subtotal = document.getElementById("subtotal");
