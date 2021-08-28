@@ -21,15 +21,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 55%;
-             box-shadow: 0 0 40px 20px rgba(0,0,0,0.2);
-             margin-left: 400px;
+            width: 75%;
+             box-shadow: 0 0 40px 20px rgba(223, 86, 170, 0.2);
+             margin-left: 320px;
              border-radius: 15px;
-             height: 180px;
+             height: 190px;
              padding: 10px;
         }
-        img{
-            width: 30%;
+        #data div img{
+            width: 33%;
         }
             .txt {
             height: 42px;
@@ -47,18 +47,22 @@
 	
     float: right;
             
-      
-        font-size: 25px;
+      border-radius: 5px;
+        font-size: 20px;
         margin-top:30px;
         padding: 12px;
-        width: 450px;
-        height: 290px;
-        margin-right: 300px;
+        width: 430px;
+        height: 380px;
+        margin-right: 290px;
+        position: sticky;
+        top: 200px;
+        bottom: 100px;
+        background-color: white;
         
 }
 #top button{
     
-    width: 450px;
+    width: 420px;
     height: 40px;
     background-color: rgb(212, 20, 180);
 }
@@ -71,15 +75,49 @@
             font-size: 20px;
             color: wheat;
         }
-        #help{
-            text-align: center;
-        }
-        .clr{
-            clear: both;
-        }
-       .flt{
-           float:right;
-        }
+      #mrp{
+    margin-left: 62%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+#mini{
+    /* margin-top: 100px; 
+    width: 30%;*/
+  /* border: 1px solid yellow; 
+    float:right;*/
+   margin-right: 5%;
+   color: #90A4AE;
+ 
+}
+h3{
+    color: black;
+}
+
+#smallBox > div {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+   
+}
+.mrp{
+
+    margin-left: 50%;
+}
+.ship{
+    margin-right: 50%;
+}
+.dis{
+    margin-left: 50%;
+}
+#help{
+    border: 1px solid #CFD8DC;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+  color: #90A4AE;
+}
+
     </style>
    
 </head>
@@ -97,7 +135,7 @@
             </div>
             
         </div>
-        <h1>Card Items</h1>
+        <h1>Cart Items</h1>
  <!-- <div id="top">
    
 <p  id="total"></p> 
@@ -105,20 +143,32 @@
     <button><a href="address.html">payment</a></button>
 </div> -->
  <div id="top">
+     <div id="mini">
         <div id="help">Need help? 922330022</div>
         <h3>Price Details</h3>
         <div id="smallBox">
             <div>
                 <div>Total MRP:</div>
-                <div id="mrp"></div>
+               <p id="mrp"></p>
             </div>
-        
-                <h3>Order total</h3>
-                <div></div>
+            <div>
+                <div class="ship">Shipping charges:</div>
+                <div>Free</div>
             </div>
-<button><a href="address.html">Place order</a></button>
+            <div>
+                <div>Coupon Discount:</div>
+                <div class="dis">₹0</div>
+            </div>
+            <div>
+                
+               
+                <div ></div>
+            </div>
            
         </div>
+
+    </div>
+    <button><a href="address.html">Place order</a></button>
     </div>
     <div id="data"></div>
 
@@ -163,15 +213,38 @@
          console.log(total);
          totalitem = totalitem+Number(1);
     });
-    var total_h1 = document.getElementById("total");
+  /*  var total_h1 = document.getElementById("total");
 
-    total_h1.innerText = `Total Price  -   ₹${total}`
+    total_h1.innerText = "₹"+total;
 
     var totalitems = document.getElementById("totalitem");
 
-    totalitems.innerText = `Total Items  - ${(totalitem)}`
+    totalitems.innerText = totalitem;
 
-   
+   let card_data = JSON.parse(localStorage.getItem("card"));
+console.log("card_data:", card_data);
+
+var total = 0;
+    var totalitem =0;
+
+    card_data.forEach(function (product) {
+        var out = product.price;
+        var x = out.replace("₹","0")
+         total = total + Number(x);
+        
+         totalitem = totalitem+Number(1);
+    });*/
+
+     console.log(total);
+    var total_h1 = document.getElementById("mrp");
+
+
+    if(total_h1){
+
+    total_h1.innerHTML = "₹"+total;
+}
+
+    
  
    
 </script>
