@@ -84,7 +84,6 @@ function check() {
     var chk= document.getElementById("check");
     var chk1= document.getElementById("wr");
    for(var i = 0; i < use.length; i++){
-       console.log(use[i].name)
        if(use[i].name === inputmob){
          if(use[i].password === inputpass){  
            var masg = "you are logged in";
@@ -97,14 +96,14 @@ function check() {
              return;
          }
        }
-   }
-   if(inputmob.length === 10 && inputpass.length > 7 )
+   
+  else if(inputmob.length === 10 && inputpass.length > 7 )
     
     {var msg2 ="u singed in success";
   
     return chk.innerText= "Account Created Successfully! Please use your credentials to login";}
    
-   
+   }
 //    msg.value = "";
 }
 

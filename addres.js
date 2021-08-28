@@ -38,10 +38,9 @@ var total = 0;
         //  console.log(total);
          totalitem = totalitem+Number(1);
     });
-    console.log(total);
-    var tot = document.getElementById("abc");
-
-    tot.innerHTML =total;
+    var total_h1 = document.getElementById("mrp");
+    if(total_h1){
+    total_h1.innerHTML = "cart value -"+total;}
     // var di = document.getElementById("smallbox");
     // di.append(total_h1);
    
