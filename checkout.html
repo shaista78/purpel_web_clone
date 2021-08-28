@@ -150,7 +150,12 @@ var total = 0;
         
          totalitem = totalitem+Number(1);
     });
-
+	function makepay() {
+        setTimeout(function () {
+            var msg = document.getElementById("msg")
+        msg.innerText="Your order is successfully placed";
+        }, 3000);
+    }
      console.log(total);
     var tot = document.getElementById("rupee");
     var subtotal = document.getElementById("subtotal");
