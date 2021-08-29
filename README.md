@@ -25,7 +25,7 @@ This website's objective is to sell beauty cosmetic products online. We cloned t
 ## Authors Information:
 - Girish v
 - Jeetendra Kumar
-- Rohit Kumar 
+- Rohit Kumar  https://github.com/rht16
 - Shaista Sultana
 
 
