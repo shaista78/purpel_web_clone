@@ -7,7 +7,7 @@ Description:
 This website's objective is to sell beauty cosmetic products online. We cloned this website in six days. You can access this cloned-website by visiting the link https://github.com/shaista78/purpel_web_clone.git
 
 
-Technologies:
+Technologies Used:
 HTML
 CSS
 Javascript
