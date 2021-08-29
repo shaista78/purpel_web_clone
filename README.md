@@ -23,10 +23,10 @@ This website's objective is to sell beauty cosmetic products online. We cloned t
 
 
 ## Authors Information:
-- Girish v
-- Jeetendra Kumar
+- Girish v https://github.com/girishv694
+- Jeetendra Kumar  https://github.com/jeetu4314
 - Rohit Kumar  https://github.com/rht16
-- Shaista Sultana
+- Shaista Sultana  https://github.com/shaista78
 
 
 
