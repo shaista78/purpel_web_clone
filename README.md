@@ -19,9 +19,9 @@ By opening the Home.html file in any browser you are able to see the working of 
 
 
 Authors Information:
-Girish v
-Jeetendra Kumar
-Rohit Kumar
+Girish v,
+Jeetendra Kumar,
+Rohit Kumar and 
 Shaista Sultana
 
 
