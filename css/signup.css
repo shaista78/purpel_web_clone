@@ -1,9 +1,10 @@
 #popup{
     border-radius: 1px solid red;
     /* text-align: center; */
-    background-color: white;
-    width: 400px;
-    height: 400px;
+    background: white;
+    /* linear-gradient( rgba(14, 13, 13, 0.5), rgba(238, 236, 237, 0.1)) */
+    width: 20%;
+    height: 50%;
     margin: auto;
     padding: 50px;
     box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
@@ -116,3 +117,15 @@ margin: auto;
    margin-left: 40%;
    border-radius: 3px;
 }
+body{
+    background-image:linear-gradient(to bottom,    rgb(241, 190, 216), rgba(87, 9, 67, 0.7)),url(https://media6.ppl-media.com/tr:h-400/static/img/story/18671/new_lets-purplle-613f74-371_1484764966_18671_changed.jpg );
+  
+    background-size: cover;
+    height: 700px;
+  
+}
+
+/* body{
+    background: url("https://media6.ppl-media.com/tr:h-400/static/img/story/18671/new_lets-purplle-613f74-371_1484764966_18671_changed.jpg") no-repeat left top, linear-gradient(#eb01a5, #d13531);
+ 
+} */
