@@ -8,7 +8,7 @@
     margin: auto;
     padding: 50px;
     box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
- margin-top: 160px;
+ margin-top: 60px;
 }
 h2{
     margin-top: 0;
@@ -34,10 +34,10 @@ h2{
 /* #nu + p{
     margin-top: 50px;
 } */
-body{
-    background-color: #EFEBE9;
-    height:500px;
-}
+/* body{
+   
+   
+} */
 #connect{
     text-align: center;
     color: #78909C;
@@ -123,8 +123,8 @@ body{
     background-image:linear-gradient(to bottom,    rgb(247, 235, 245), rgba(196, 83, 241, 0.603)),url(https://media6.ppl-media.com/tr:h-400/static/img/story/18671/new_lets-purplle-613f74-371_1484764966_18671_changed.jpg );
   
     background-size: cover;
-    height: 700px;
-  
+    height: 730px;
+    background-color: #EFEBE9;
 }
 
 h2,p{
