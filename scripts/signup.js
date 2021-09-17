@@ -77,10 +77,7 @@ function check() {
     {var msg2 ="u singed in success";
     return chk.innerText= "Account Created Successfully! Please use your credentials to login";}
    
-//    msg.value = "";
 }
-// document.getElementById("mess").value= "";
-// document.getElementById("mess1").value = "";
 function hol (){
     var botn = document.getElementById("btn");
      botn.style.background = 'red';
@@ -91,7 +88,4 @@ function fun(){
     bt.style.background = 'white';
    bt.style.color = 'red';
 }
-// function bottom(){
-//     var btm = document.getElementById("nu");
-//     btm.style.border-bottom: 'red';
-// }
+
