@@ -1,7 +1,7 @@
 #popup{
     border-radius: 1px solid red;
     /* text-align: center; */
-    background: white;
+    background:#eee;
     /* linear-gradient( rgba(14, 13, 13, 0.5), rgba(238, 236, 237, 0.1)) */
     width: 20%;
     height: 50%;
@@ -125,7 +125,24 @@ body{
   
 }
 
+h2,p{
+    font-family: sans-serif;
+}
+
+button{
+    padding:10px 10px;
+    background: #222;
+    color:#fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
 /* body{
     background: url("https://media6.ppl-media.com/tr:h-400/static/img/story/18671/new_lets-purplle-613f74-371_1484764966_18671_changed.jpg") no-repeat left top, linear-gradient(#eb01a5, #d13531);
  
 } */
+
+#connect{
+    color: green;
+}
