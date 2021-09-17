@@ -1,6 +1,8 @@
 # Purplle.com-clone
 
 ![Screenshot (244)](https://user-images.githubusercontent.com/64050683/131240803-8b71a06b-f347-42a7-bc8d-358658772df4.png)
+![Screenshot (261)](https://user-images.githubusercontent.com/64050683/133719062-0fb1e2d3-f7c4-4118-9b5f-cf4a2fc8ac25.png)
+
 
 ## About
 **Purple.com** website sells cosmetic products online, we have cloned this website using Technologies HTML,CSS and Javascript.
