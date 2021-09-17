@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>women perfume</title>
+    <title>Women_deodorant</title>
     <script src="https://kit.fontawesome.com/c4e502dbf0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Top.css">
-
+    <link rel="stylesheet" href="/css/Top.css">
     <style>
       #data {
             display: grid;
@@ -21,9 +20,7 @@
             flex-direction: column;
             align-items: center;
         }
-       
-         
-              .txt {
+                .txt {
             height: 42px;
             color: #566770;
             font-size: 16px;
@@ -46,15 +43,12 @@
         .myDIV:hover .hide {
             display: block;
             color: rgb(241, 234, 234);
-            cursor: -webkit-grab;
-             cursor: grab;
-
         }
-        h1{
+         h1{
             text-align: center;
             font-size: 50px;
         }
-        #banner{
+           #banner{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -65,11 +59,12 @@ margin-top: 100px;
 </head>
 <body>
 
-
+    
     <div id="top-box">
     <div><a href="AfterLogin.html"><img id="logo" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"/></a></div>
             <div class="basket-icons"> 
-<a href="card.html"><i class="fas fa-cart-plus fa-3x" id="check"></i></i></a>
+
+                 <a href="card.html"><i class="fas fa-cart-plus fa-3x" id="check"></i></i></a>
 
                  <a href="address.html"><i class="fas fa-address-card fa-3x" id="face"></i></a>
 
@@ -77,82 +72,82 @@ margin-top: 100px;
             </div>
             
         </div>
-        <div id="banner">
+          <div id="banner">
 		<a href="#"><img id="banner"
-				src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1630062981_web_-without-cta.gif?tr=f-gif" /></a>
+				src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1629299681_web-3.jpg" /></a>
 	</div>
-         <h1>Perfumes</h1>
+          <h1>Deodorants & Roll Ons For Women</h1>
     <div id="data"></div>
+    <p id="num"></p>
 </body>
 </html>
 <script>
 
 //Fragrance for women
-const perfumes=[
+const deodorants_roll=[
 {
-    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/186124/body-cupid-aqua-wave-perfume-unisex-100-ml_1_display_1571290902_a29b4e3a.jpg",
-    name:"Body Cupid Aqua Wave Perfume - Unisex (100 ml)",
-    rating:3.7,
-    price:"₹549"
+    name:"NIVEA Deodorant Roll On Whitening Smooth Skin 50ml",
+    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/203380/new-nivea-whitening-smooth-skin-roll-on-50-ml1_2_display_1557736874_1fa9174c.jpg",
+    rating: 3.6,
+    price: "₹159",
 },{
-    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/99032/engage-w1-perfume-spray-for-women-120-ml_5_display_1624275787_a68bf411.jpg",
-    name:"Engage W1 Perfume Spray For Women, 120 ml",
+    name:"Nivea Deodorant Roll On, Peral & Beauty 50 ml",
+    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/201720/nivea-pearl-and-beauty-deo-roll-on-for-women-50-g-10_1_display_1553339041_0ddbdc32.jpg",
     rating: 4.0,
-    price:"₹179" ,
+    price: "₹149",
 },{
-    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/99047/rasasi-blue-lady-edp-for-women-40-ml_2_display_1472910452_ba03ed23.jpg",
-    name:"Rasasi Blue Lady EDP For Women(40 ml)",
-    rating: 4.0,
-    price:"₹1099",
+    name:"Nivea Deodorant Roll On, Peral & Beauty 150 ml",
+    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/246891/nivea-deodorant-pearl-beauty-for-women-150-ml_2_display_1551356300_9d8e6ddd.jpg",
+    rating: 4.5,
+    price: "₹180",
 },{
-    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/241406/body-cupid-floral-garden-eau-de-parfum-floral-collection-for-women-100-ml_1_display_1609996006_1f5719e7.jpg",
-    name:"Body Cupid Floral Garden Eau de Parfum-Floral Collection-for Women -(100 ml)",
-    rating:5 ,
-    price: "₹599",
-},{
-    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/241801/la-french-naughty-girl-perfume-for-women-85-ml_2_display_1622715967_f7155204.jpg",
-    name:"Dovidoff cool red EDT",
+    name:"Nivea Deodorant DEO MILK Sensitive Roll On(40 ml) ",
+    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/199330/nivea-women-deodorant-deo-milk-sensitive-roll-on-40-ml_1_display_1588660686_68e3b7b9.jpg",
     rating:4.4 ,
-    price: "₹499",
+    price:"₹158 ",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/186118/body-cupid-exotic-oud-perfume-100-ml_1_display_1571290831_d54386bf.jpg",
-    name:"Body Cupid Exotic Oud Perfume(100 ml)",
-    rating:3.6 ,
-    price: "₹549",
+    name:"NIVEA Deodorant Roll On Whitening Smooth Skin 25ml",
+    image:"https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/239646/nivea-women-deodorant-roll-on-whitening-smooth-skin-25-ml_1_display_1621931680_42cfbaf3.jpg",
+    rating:4.3 ,
+    price: "₹99",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/3253/davidoff-cool-water-for-women-edt-100-ml_1_display_1452849725_5924fee9.jpg",
-    name:"Davidoff Cool Water for Women EDT (100ml)",
-    rating: 4,
-    price: "₹2235",
+    name:"Eva Fresh 125ml Skin Friendly",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/199100/eva-deo-fresh-125-ml-74_2_display_1624275951_91f09f88.jpg",
+    rating: 4.4,
+    price:"₹140",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112198/armaf-tres-jour-eau-de-parfum-for-women-100-ml_1_display_1484636215_f46ea03f.jpg",
-    name:"Armaf Tres Jour Eau de Parfum For Women (100 ml)",
-    rating: 3.3 ,
-    price: "₹1199",
+    name:"Engage Floral Zest Deodorant for Women Citrus & spicy Skin Friendly, 150ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/242247/engage-floral-zest-deodorant-for-women-citrus-and-floral-skin-friendly-150ml_7_display_1628267322_5de70352.jpg",
+    rating:4.5 ,
+    price: "₹150",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/129250/armaf-italiano-vivo-edp-for-women-100-ml_1_display_1484635991_998f068b.jpg",
-    name:"Armaf Italiano Vivo EDP For Women (100 ml)",
-    rating: 4.1,
-    price: "₹1299",
+    name:"Dove Eventone Deodorant For Women, 150ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/230723/dove-eventone-deodorant-for-women-150-ml_1_display_1614830903_c40a2e21.jpg",
+    rating:4.0 ,
+    price: "₹176" ,
 },{
-image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112197/armaf-vanity-femme-elegence-eau-de-parfum-for-women-100-ml_1_display_1484636206_6e0a9a14.jpg",
-    name:"Armaf Vanity Femme Elegence Eau de Parfum For Women(100 ml)",
-    rating: 3.8,
-    price: "₹1199",
+    name:"Paco Rabanne Lady Millon Deodorant for Women 150 ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/151316/paco-rabanne-lady-million-deodorant-for-women-150-ml_1_display_1535460405_822d0538.jpg",
+    rating:5 ,
+    price: "₹1279",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/110569/burberry-body-edp-perfume-for-women-85-ml_2_display_1618396324_4a7503dd.jpg",
-    name:"BURBERRY BODY EDP Perfume For Women(85 ml)",
-    rating: 3.9,
-    price: "₹4755",
+    name:"NIVEA WOMAN Deodorant DEO MILK Fresh 150 ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/199328/nivea-women-deodorant-deo-milk-fresh-150-ml_1_display_1588660766_2bd3e900.jpg",
+    rating:5 ,
+    price: "₹191",
 },{
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/242385/insight-cosmetics-cherry-eau-de-perfume_1_display_1623212105_88acf05a.jpg",
-    name:"INSIGHT Cosmetics Cherry Eau De Perfume",
-    rating: 3.5,
-
-    price: "₹190",
-}
+    name:"Plum BodyLovin Orchid You",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/234578/plum-bodylovin-orchid-you-not-body-mist_5_display_1617873623_ef07596b.jpg",
+    rating: 4.3,
+    price: "₹473",
+},{
+    name:"Ital Veloce La Bella Fine Fragrance Mist 210 ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/207300/ital-veloce-la-bella-fine-fragrance-mist-210-ml_1_display_1600079393_c6928210.jpg",
+    rating: 3.9 ,
+    price: "₹699" ,
+},
 ];
-   const perfumes_json = JSON.stringify(perfumes);
+    const perfumes_json = JSON.stringify( deodorants_roll);
 
     localStorage.setItem("women_perfume", perfumes_json);
 
@@ -162,7 +157,7 @@ women_perfume = JSON.parse(women_perfume);
     function viewPerfumes() {
         console.log(women_perfume);
         let data = document.getElementById("data");
-        women_perfume.forEach(function (product) {
+  women_perfume.forEach(function (product) {
            let div = document.createElement("div");
            div.setAttribute("class", "myDIV")
             let name = document.createElement("p");
@@ -201,6 +196,7 @@ women_perfume = JSON.parse(women_perfume);
         });
     }
 
+
 viewPerfumes();
     if (localStorage.getItem("card") === null) {
         localStorage.setItem("card", JSON.stringify([]));
@@ -217,7 +213,9 @@ viewPerfumes();
             cardtemp.push(card_data[key].name);
         }
         if(cardtemp.indexOf(p.name)  != -1){
-            
+            var num = document.getElementById("num");
+            num.innerText="item is already added to card"
+           
         }else{
             card_data.push(p);
         }

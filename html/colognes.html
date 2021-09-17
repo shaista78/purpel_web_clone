@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfumes</title>
+    <title>Musk</title>
     <script src="https://kit.fontawesome.com/c4e502dbf0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Top.css">
+    <link rel="stylesheet" href="/css/Top.css">
+
     <style>
       #data {
             display: grid;
@@ -52,18 +53,9 @@
             text-align: center;
             font-size: 50px;
         }
-          #banner{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-margin-top: 100px;
-	
-}
     </style>
 </head>
 <body>
-
-
 
 
     <div id="top-box">
@@ -75,94 +67,81 @@ margin-top: 100px;
                  <a href="address.html"><i class="fas fa-address-card fa-3x" id="face"></i></a>
 
 
-
             </div>
             
         </div>
-        
-        <h1>Perfumes</h1>
+
+        <h1>Cologens</h1>
     <div id="data"></div>
 </body>
 </html>
 <script>
 
 //Fragrance for women
-const aftershaves=[
+const colognes=[
 {
-    name:"Nivea MEN Shaving Deep",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/209762/nivea-men-deep-impact-comfort-after-shave-lotion-100-ml_6_display_1551352705_4438dd9e.jpg",
-    rating: 4.5,
-    price: "₹203",
+    name:"Biotique Fresh Neroli Eau De Cologne",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/107124/biotique-bio-fresh-neroli-50-ml_2_display_1583929361_2f141be0.jpg",
+    rating:3.8 ,
+    price: "₹559",
 },{
-    name:"Volamena For Men After Shave Balm",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/244652/volamena-for-men-after-shave-balm-100-ml_1_display_1624864028_a04face2.jpg",
-    rating:4.5 ,
-    price: "₹297",
-},
-{
-    name:"Mancode Shaving Essential Pre shave And After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/225879/mancode-shaving-essentials-pre-shave-balm-100gm-after-shave-balm-100gm-to-give-luxury-shaving-experience-100gram-balm-formulated-for-men-by-mancode_1_display_1611226544_8f9fd80a.jpg",
-    rating: 4.7,
-    price: "₹449",
-},
-{
-    name:"old Spice Original After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/131225/old-spice-after-shave-lotion-100-ml-original-34_1_display_1628752092_1a6a30ce.jpg",
-    rating: 4.8,
-    price: "₹215",
-},
-{
-    name:"Old Spice Musk After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/132322/old-spice-musk-after-shave-lotion-150-ml_1_display_1512989799_3b24eff0.jpg",
-    rating: 4.7,
-    price: "₹250",
-},
-{
-    name:"Biotique Bio Wild Grass Sooting After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/99092/biotique-bio-wild-grass-a-soothing-after-shave-gel-for-men-120-ml_1_display_1537012714_3b1159c6.jpg",
-    rating:3.9 ,
-    price: "₹144",
-},
-{
-    name:"Bombay Shaving Company Defender For Her After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/229964/bombay-shaving-company-defender-for-her-after-shave-soothing-gel-for-women-for-post-shave-moisturisation-and-hydration-100-g_1_display_1614075574_091bbe56.jpg",
+    name:"Jovan Sex Appeal Eau De Cologne Perfume",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112126/joven-sex-appeal-eau-de-cologne-perfume-spray-for-men-88-ml_1_display_1484206394_9fa6e14d.jpg",
     rating:4.7 ,
-    price: "₹236",
-},
-{
-    name:"Nivea Men Vitalizing After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/229286/nivea-for-men-after-shave-lotion-100-ml_4_display_1551352493_e7062a9d.jpg",
-    rating:3.7 ,
-    price: "₹206",
-},
-{
-    name:"Sanfe mens After Shave & Wax Nourshing oil",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/240084/sanfe-after-shave-and-wax-nourishing-oil-100ml_2_display_1627971508_e11ce2c8.jpg",
-    rating:4.5 ,
-    price: "₹349",
-},
-{
-    name:"Axe Signture Tempt After Shave",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/205988/axe-signture-tempt-after-shave-lotion-50-ml_2_display_1565340513_565589f0.jpg",
-    rating: 4.6,
-    price: "₹130",
-},
-{
-    name:"Man Arden Face Care Gift Box For Men",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/167494/man-arden-face-care-gift-box-for-men-7x-after-shave-balm-charcoal-face-scrub-charcoal-face-mask_7_display_1611405448_7208f9e9.jpg",
+    price: "₹649",
+},{
+    name:"Ustraa by happly unmarried Cologne Spray",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/126721/ustraa-by-happily-unmarried-cologne-spray-base-camp-deodorant-spray-for-men-100-ml_9_display_1611567573_bff904f0.jpg",
+    rating: 5,
+    price: "₹599",
+},{
+    name:"Jovan Musk Pour Homme Cologe Spray For Men",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/89670/jovan-musk-for-men-cologne-spray-88-ml_1_display_1479458032_171e2f47.jpg",
+    rating:5 ,
+    price: "₹699",
+},{
+    name:"Jovan Combo Of Black Musk Men's Perfume",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/148454/jovan-combo-of-black-musk-men-s-perfumes-edc-88-ml-with-deodorant-150-ml_1_display_1531915507_a655923d.jpg",
     rating:4.6 ,
-    price: "₹847",
+    price: "₹829",
+},{
+    name:"4711 Ekw Eau de Cologne 400ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/238593/4711-ekw-eau-de-cologne-400ml_2_display_1626096555_26f34a5b.jpg",
+    rating:4.6 ,
+    price: "₹3315",
+},{
+    name:"Ustraa by happly unmarried Cologne Spray",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/126721/ustraa-by-happily-unmarried-cologne-spray-base-camp-deodorant-spray-for-men-100-ml_9_display_1611567573_bff904f0.jpg",
+    rating: 5,
+    price: "₹599",
+},{
+    name:"Jovan White Musk For men Cologe Spray",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/112128/jovan-white-musk-for-women-cologne-spray-96-ml_1_display_1484206412_2c02a18d.jpg",
+    rating: 4.3,
+    price: "₹699",
+},{
+    name:"Jovan Musk Pour Homme Cologe Spray For Men",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/89670/jovan-musk-for-men-cologne-spray-88-ml_1_display_1479458032_171e2f47.jpg",
+    rating:5 ,
+    price: "₹699",
+},{
+    name:"Jovan Black Musk For Men Cologne Spray",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/150989/jovan-black-musk-for-men-cologne-spray-88-ml_1_display_1484206430_c031da6d.jpg",
+    rating:5.0 ,
+    price: "₹599",
+},{
+    name:"4711 Ekw Eau de Cologne 400ml",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/238593/4711-ekw-eau-de-cologne-400ml_2_display_1626096555_26f34a5b.jpg",
+    rating:4.6 ,
+    price: "₹3315",
+},{
+     name:"Jovan Black Musk For Men Cologne Spray",
+    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/150989/jovan-black-musk-for-men-cologne-spray-88-ml_1_display_1484206430_c031da6d.jpg",
+    rating:5.0 ,
+    price: "₹599",
 },
-{
-    name:"Vetoni ice King No. 1 Natural After Shave Lotion for Men",
-    image:"https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/232245/vetoni-ice-king-no-1-natural-after-shave-lotion-for-men-soothes-irritation-from-shaving-moisturizes-and-repairs-skin-prevents-razor-burn-leaves-skin-feeling-smooth-and-soft-50-ml-blue_1_display_1617949772_ac1fd955.jpg",
-    rating:3.6 ,
-    price: "₹95",
-},
-
 ];
-
-    const perfumes_json = JSON.stringify(aftershaves);
+    const perfumes_json = JSON.stringify(colognes);
 
     localStorage.setItem("women_perfume", perfumes_json);
 
@@ -173,7 +152,7 @@ women_perfume = JSON.parse(women_perfume);
         console.log(women_perfume);
         let data = document.getElementById("data");
 
-       women_perfume.forEach(function (product) {
+ women_perfume.forEach(function (product) {
            let div = document.createElement("div");
            div.setAttribute("class", "myDIV")
             let name = document.createElement("p");
