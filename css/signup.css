@@ -4,7 +4,7 @@
     background:#eee;
     /* linear-gradient( rgba(14, 13, 13, 0.5), rgba(238, 236, 237, 0.1)) */
     width: 20%;
-    height: 50%;
+    height:55%;
     margin: auto;
     padding: 50px;
     box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
@@ -36,6 +36,7 @@ h2{
 } */
 body{
     background-color: #EFEBE9;
+    height:500px;
 }
 #connect{
     text-align: center;
