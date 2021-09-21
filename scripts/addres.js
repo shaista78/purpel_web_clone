@@ -11,6 +11,14 @@ function addAddress(){
     var cit = document.getElementById("cit").value;
     var st = document.getElementById("sta").value;
     var mobi = document.getElementById("phone").value;
+
+if((code.length ==6) && (stre.length > 0) && (name.length > 0) && (cit.length > 0) && (st.length > 0) && (cit.length > 0) && (mob.length == 10)){
+    console.log("yes");
+
+} else{
+    console.log("no");
+}
+
     var objpro = {
         name: nam,
         street: stre,
