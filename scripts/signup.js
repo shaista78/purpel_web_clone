@@ -55,7 +55,6 @@ function check() {
     var inputpass = document.getElementById("pas").value;
     var inputmob = document.getElementById("nu").value;
     var againget = localStorage.getItem("user");
-    console.log(user);
     if (againget !== null) {
         var use = JSON.parse(againget);
     }

@@ -42,6 +42,9 @@
 		#gif{
 			margin-left: 30%;
 		}
+		#msg{
+			display: none;
+		}
 	</style>
 
 </head>
@@ -66,18 +69,18 @@
 				<div id="green">
 
 
-					<p id="in">Credit/Debit Card</p>
+					<p id="in">Credit/Debit Card </p>
 
 					<form  >
 						<div id="debit">
-							<input type="text" placeholder="Name on card" required>
+							<input type="text" placeholder="Name on card" required id="name">
 							<div id="card-top">
 								<input type="text" placeholder="Card number" id="card" required>
 								<input type="text" placeholder="CVV" id="input" required>
 							</div>
 							<div id="card-bottom">
-								<input type="text" placeholder="Expiry MM" id="input" required>
-								<input type="text" placeholder="Expiry YY" id="input" required>
+								<input type="text" placeholder="Expiry MM" id="input1" required>
+								<input type="text" placeholder="Expiry YY" id="input2" required>
 							</div>
 
 						</div>
@@ -88,7 +91,7 @@
 								<p>Save Card for future use</p>
 							</div>
 							<div id="gif"></div>
-
+							<div id="msg">Please fill all fields</div>
 							<button onclick="makepay(event)" id="bt">PAY</button>
 						</div>
 					</form>
@@ -157,7 +160,7 @@
 <script>
 
 	let card_data = JSON.parse(localStorage.getItem("card"));
-	console.log("card_data:", card_data);
+	
 
 	var total = 0;
 	var totalitem = 0;
@@ -172,14 +175,7 @@
 	function makepay(e) {
 		e.preventDefault();
 
-	function makepay() {
-
-        setTimeout(function () {
-             window.location.href="Order.html";
-        }, 4000);
-    }
-     console.log(total);
-    var tot = document.getElementById("rupee");
+	var tot = document.getElementById("rupee");
     var subtotal = document.getElementById("subtotal");
     var total_order = document.getElementById("total");
     var bt = document.getElementById("bt");
@@ -187,26 +183,41 @@
     total_order.innerHTML = `&#x20B9;${total}`;
     bt.innerHTML = `PAY &#x20B9;${total}`;
      tot.innerHTML = `&#x20B9;${total}`;
-   
 
+
+		var name = document.getElementById("name").value;
+		var card = document.getElementById("card").value;
+		var input = document.getElementById("input").value;
+		var input1 = document.getElementById("input1").value;
+		var input2 = document.getElementById("input2").value;
+	
+		if(name.length==0 || card.length==0 || input.length==0 || input1.length==0 ||input2.length==0 ){
+			var x =	document.getElementById("msg");
+			x.style.display="block";
+			x.style.color="red";
+
+		}else{
+			var x =	document.getElementById("msg");
+			x.style.display="none";
 			var img = document.createElement("img");
 
 			img.src = "https://1.bp.blogspot.com/-TUnIV6lCpUI/Ug5AjWt-L5I/AAAAAAAABRY/X5083DNXw28/s1600/LoadingWait.gif";
 			var src = document.getElementById("gif");
 			src.appendChild(img)
+
+			setTimeout(function () {
+				window.location.href="Order.html";
+			}, 4000);
+		}
+    
+   
+   
+
+			
 		
-		setTimeout(function () {
-			window.location.href = "Order.html";
-		},2000);
+		
 	}
-	console.log(total);
-	var tot = document.getElementById("rupee");
-	var subtotal = document.getElementById("subtotal");
-	var total_order = document.getElementById("total");
-	var bt = document.getElementById("bt");
-	subtotal.innerHTML = `&#x20B9;${total}`;
-	total_order.innerHTML = `&#x20B9;${total}`;
-	bt.innerHTML = `PAY &#x20B9;${total}`;
-	tot.innerHTML = `&#x20B9;${total}`;
+
+
 
 </script>
