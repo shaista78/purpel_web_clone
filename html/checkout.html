@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta charset = "UTF-8" />
 	<title>Checkout</title>
 	<link rel="stylesheet" href="../css/Top.css">
 	<link rel="stylesheet" href="../css/Checkout.css">
@@ -68,16 +69,16 @@
 
 					<p id="in">Credit/Debit Card</p>
 
-					<form  >
+					<form action="Order.html" >
 						<div id="debit">
-							<input type="text" placeholder="Name on card" required>
+							<input type="text" placeholder="Name on card" required/>
 							<div id="card-top">
-								<input type="text" placeholder="Card number" id="card" required>
-								<input type="text" placeholder="CVV" id="input" required>
+								<input type="text" placeholder="Card number" id="card" required/>
+								<input type="text" placeholder="CVV" id="input" required/>
 							</div>
 							<div id="card-bottom">
-								<input type="text" placeholder="Expiry MM" id="input" required>
-								<input type="text" placeholder="Expiry YY" id="input" required>
+								<input type="text" placeholder="Expiry MM" id="input" required/>
+								<input type="text" placeholder="Expiry YY" id="input" required/>
 							</div>
 
 						</div>
@@ -89,7 +90,7 @@
 							</div>
 							<div id="gif"></div>
 
-							<button onclick="makepay(event)" id="bt">PAY</button>
+							<button type="submit"  id="bt">PAY</button>
 						</div>
 					</form>
 					
@@ -169,13 +170,16 @@
 
 		totalitem = totalitem + Number(1);
 	});
+
+	var btn = document.getElementById('bt');
+	//btn.addEventListener('click',makepay);
 	function makepay(e) {
 		e.preventDefault();
 
 	function makepay() {
 
         setTimeout(function () {
-             window.location.href="Order.html";
+            // window.location.href="Order.html";
         }, 4000);
     }
      console.log(total);
