@@ -55,7 +55,6 @@ function check() {
     var inputpass = document.getElementById("pas").value;
     var inputmob = document.getElementById("nu").value;
     var againget = localStorage.getItem("user");
-    console.log(user);
     if (againget !== null) {
         var use = JSON.parse(againget);
     }
@@ -89,3 +88,21 @@ function fun(){
    bt.style.color = 'red';
 }
 
+
+// function check() {
+//     var nam = document.getElementById("nam").value;
+// var code = document.getElementById("pin").value;
+// var stre = document.getElementById("division").value;
+// var cit = document.getElementById("cit").value;
+// var st = document.getElementById("sta").value;
+// var mobi = document.getElementById("phone").value;
+
+
+// if((code.length ==6) && (stre.length > 0) && (nam.length > 0) &&  (cit.length > 0) && (st.length > 0) && (cit.length > 0) && (mobi.length == 10)){
+// console.log("yes");
+// window.location.href="checkout.html";
+
+// } else{
+// let warni = document.getElementById("warn");
+// warni.innerHTML = "Please fill required fields*"
+// }

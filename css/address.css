@@ -149,3 +149,10 @@ h3{
 .flt{
     float: left;
 }
+
+#warn{
+    color: red;
+    font-size: 20px;
+    margin-left: 31%;
+    padding: 10px;
+}
